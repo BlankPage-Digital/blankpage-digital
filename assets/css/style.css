@@ -1343,19 +1343,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-/* Rounded profile picture */
-.avatar-box {
-  width: 80px;
-  height: 80px;
-  border-radius: 12px;
-  overflow: hidden;
-}
+  .avatar-box { border-radius: 30px; }
 
-.avatar-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  .avatar-box img { width: 120px; }
 
   .info-content .name { margin-bottom: 15px; }
 
