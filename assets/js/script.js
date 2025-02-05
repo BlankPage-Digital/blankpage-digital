@@ -181,3 +181,42 @@ document.querySelectorAll('.modal-close-btn').forEach(btn => {
     modal.querySelector('[data-modal-iframe]').setAttribute('src', '');
   });
 });
+
+// Select blog post items and modal elements
+const blogPostItems = document.querySelectorAll('.blog-post-item');
+const blogModalContainer = document.querySelector('[data-blog-modal-container]');
+const blogOverlay = document.querySelector('[data-blog-overlay]');
+const blogModalCloseBtn = document.querySelector('[data-blog-modal-close-btn]');
+const blogModalImg = document.querySelector('[data-blog-modal-img]');
+const blogModalTitle = document.querySelector('[data-blog-modal-title]');
+const blogModalText = document.querySelector('[data-blog-modal-text]');
+
+// Function to open modal with selected blog post content
+blogPostItems.forEach(item => {
+  item.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    // Retrieve content from the clicked blog post
+    const imgSrc = this.querySelector('.blog-banner-box img').src;
+    const title = this.querySelector('.blog-item-title').innerText;
+    const text = this.querySelector('.blog-text').innerText;
+
+    // Set modal content
+    blogModalImg.src = imgSrc;
+    blogModalImg.alt = title;
+    blogModalTitle.innerText = title;
+    blogModalText.innerText = text;
+
+    // Show modal
+    blogModalContainer.classList.add('active');
+  });
+});
+
+// Function to close the modal
+const closeBlogModal = function () {
+  blogModalContainer.classList.remove('active');
+};
+
+blogModalCloseBtn.addEventListener('click', closeBlogModal);
+blogOverlay.addEventListener('click', closeBlogModal);
+
