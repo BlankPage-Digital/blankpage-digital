@@ -341,8 +341,8 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 12px;
   overflow: hidden;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 .avatar-box img {
