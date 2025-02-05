@@ -183,6 +183,40 @@ document.querySelectorAll('.modal-close-btn').forEach(btn => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const languages = {
+    en: {
+      primary: '#5928B1',
+      background: '#E6E6FA' // Desaturated purple
+    },
+    sv: {
+      primary: '#001A8F',
+      background: '#E6E6F0' // Desaturated blue
+    },
+    ro: {
+      primary: '#9B0000',
+      background: '#FFE6E6' // Desaturated red
+    }
+  };
 
+  // Load saved language or default to English
+  const savedLang = localStorage.getItem('lang') || 'en';
+  setLanguage(savedLang);
+
+  // Add click handlers for language selection
+  document.querySelectorAll('.dropdown-content a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const lang = this.dataset.lang;
+      setLanguage(lang);
+      localStorage.setItem('lang', lang);
+    });
+  });
+
+  function setLanguage(lang) {
+    document.documentElement.style.setProperty('--primary-color', languages[lang].primary);
+    document.documentElement.style.setProperty('--background-color', languages[lang].background);
+  }
+});
 
 
