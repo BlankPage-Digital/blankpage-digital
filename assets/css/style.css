@@ -16,17 +16,6 @@
 \*-----------------------------------*/
 
 :root {
-  --primary-color: #5928B1; /* English default */
-  --background-color: #E6E6FA; /* Desaturated purple */
-}
-
-body {
-  background-color: var(--background-color);
-}
-
-nav a:hover {
-  color: var(--primary-color);
-}
 
   /**
    * colors
@@ -148,10 +137,9 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-/* Not sure about this one */
-
 body {
-  background-color: var(--background-color);
+  background-color: #3D2B42;
+  /* other existing styles */
 }
 
 
