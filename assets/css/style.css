@@ -1529,21 +1529,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: calc(100% - 64px);
   }
 
-.sidebar {
-  position: relative; /* ensure this is set */
-  /* existing styles … */
-}
-
-.sidebar::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px; /* adjust height as needed */
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
-  pointer-events: none;
-}
 
 
   /**
