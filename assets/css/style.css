@@ -1495,15 +1495,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
-
-	@media (max-width: 768px) {
-  .sidebar {
-    max-height: 250px; /* Adjust as needed */
-  }
-}
-
-
   .sidebar-info { gap: 25px; }
 
   .avatar-box { border-radius: 30px; }
