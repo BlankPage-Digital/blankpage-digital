@@ -339,7 +339,16 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+}
+
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .info-content .name {
