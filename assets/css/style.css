@@ -2044,3 +2044,38 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Particle Container covers the full screen behind content */
+.particle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* So it doesn't interfere with clicks */
+  overflow: hidden;
+  z-index: -2; /* Behind other elements */
+}
+
+/* Style for each particle */
+.particle {
+  position: absolute;
+  width: 40px;  /* Adjust size as needed */
+  height: 40px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="%23ffffff" stroke-width="2" d="M4 2h12l4 4v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path fill="none" stroke="%23ffffff" stroke-width="2" d="M14 2v4h4"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  /* Apply a floating animation */
+  animation: floatParticle 20s ease-in-out infinite;
+}
+
+/* Keyframes for gentle floating motion */
+@keyframes floatParticle {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(10px, -10px); }
+  50%  { transform: translate(0, 10px); }
+  75%  { transform: translate(-10px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
