@@ -762,6 +762,10 @@ main {
   overflow: hidden;
 }
 
+.testimonials {
+  display: none;
+}
+
 
 /**
  * #testimonials-modal
