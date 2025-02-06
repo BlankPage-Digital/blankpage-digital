@@ -408,7 +408,7 @@ main {
 }
 
 .info_more-btn:hover,
-.info_more-btn:focus { background: var(--text-gradient-lang); }
+.info_more-btn:focus { background: var(--bg-gradient-yellow-2); }
 
 .info_more-btn:hover::before,
 .info_more-btn:focus::before { background: var(--text-gradient-lang); }
@@ -416,8 +416,8 @@ main {
 .info_more-btn span { display: none; }
 
 .sidebar-info_more {
-  max-height: none; /* Ensure full expansion */
-  overflow: visible; /* Show all content */
+  max-height: none;
+  overflow: visible;
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-2);
@@ -426,7 +426,7 @@ main {
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
-  max-height: 1000px; /* Set a large max-height to allow expansion */
+  max-height: 1000px;
 }
 
 .contacts-list {
