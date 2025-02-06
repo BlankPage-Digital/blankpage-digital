@@ -52,7 +52,7 @@
    */
 
   /* font-family */
-  --ff-primary: 'Inter', sans-serif;
+  --ff-primary: 'Inter', sans-serif !important;
 
   /* font-size */
   --fs-1: 24px;
