@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       position: fixed;
       width: 30px;
       height: 30px;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="f0ead6" stroke-width="2" d="M4 2h12l4 4v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path fill="none" stroke="f0ead6" stroke-width="2" d="M14 2v4h4"/></svg>');
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="%235928B1" stroke-width="2" d="M4 2h12l4 4v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path fill="none" stroke="%235928B1" stroke-width="2" d="M14 2v4h4"/></svg>');
       background-size: contain;
       background-repeat: no-repeat;
       opacity: 0.6;
