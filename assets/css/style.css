@@ -52,7 +52,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Inter', sans-serif;
+  --ff-poppins: 'Inter', sans-serif !important;
 
   /* font-size */
   --fs-1: 24px;
@@ -92,7 +92,7 @@
 /* ========= Ensure Global Defaults on Body ========= */
 body {
   background-color: var(--background-lang-color);
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-poppins); !important
   margin: 0; /* Remove any default margins causing white space */
 }
 
