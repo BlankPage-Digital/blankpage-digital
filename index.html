@@ -894,31 +894,35 @@
 
 
 <li class="blog-post-item">
-  <a href="#">
+  <a href="#" 
+     data-img="./assets/images/001A8F_se.png" 
+     data-title="Introducing BlankPage: Merging Academic Insight with Digital Innovation" 
+     data-body="<p>Welcome to the first post on BlankPage – a new venture merging academic insight with practical IT and marketing consulting...</p>">
     <figure class="blog-banner-box">
-      <!-- Replace with an appropriate banner image for BlankPage or keep as is -->
       <img src="./assets/images/blog-blankpage.jpg" alt="Introducing BlankPage" loading="lazy">
     </figure>
-    <div class="blog-content">
-      <div class="blog-meta">
-        <p class="blog-category">BlankPage</p>
-        <span class="dot"></span>
-        <time datetime="2025-02-05">Feb 05, 2025</time>
-      </div>
-      <h3 class="h3 blog-item-title">Introducing BlankPage: Merging Academic Insight with Digital Innovation</h3>
-      <p class="blog-text">
-        Welcome to the first post on BlankPage—a new freelance venture that combines my academic journey in International Management with practical IT and marketing consulting. BlankPage is dedicated to empowering businesses with innovative website development solutions, digital marketing strategies, and IT consultancy. In this space, I will share my experiences, insights, and the evolving strategies that drive business success in today’s digital landscape. Stay tuned as we explore the intersection of theory and practice, transforming challenges into opportunities.
-      </p>
-    </div>
+    <h3 class="h3 blog-item-title">Introducing BlankPage: Merging Academic Insight with Digital Innovation</h3>
   </a>
 </li>
-
 
           </ul>
 
         </section>
 
       </article>
+
+      <!-- Blog Modal -->
+<div id="blog-modal" class="blog-modal hidden">
+  <div class="blog-modal-content">
+    <button class="modal-close-btn" id="blog-modal-close">&times;</button>
+    <figure class="blog-modal-image">
+      <img src="" alt="" id="blog-modal-img">
+    </figure>
+    <h3 id="blog-modal-title"></h3>
+    <div id="blog-modal-body"></div>
+  </div>
+</div>
+
 
     </div>
 
