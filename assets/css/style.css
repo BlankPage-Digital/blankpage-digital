@@ -114,6 +114,10 @@ body.lang-ro {
   --text-gradient-lang: linear-gradient(to right, #9B0000, #7A3B3B);
 }
 
+body:not([class*="lang-"]) {
+  --primary-color: #5928B1;
+  --background-lang-color: #3D2B42;
+}
 
 /*-----------------------------------*\
   #RESET
@@ -508,7 +512,7 @@ main {
   padding: 10px 20px;
   background: transparent;
   color: var(--primary-color);
-  border: 1px solid #5928B1;
+  border: 1px solid var(--primary-color);
   border-radius: 4px; /* Slightly rounded corners */
   text-transform: uppercase;
   font-weight: bold;
@@ -953,7 +957,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--light-gray-70);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -2053,21 +2057,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Style for each particle */
 .particle {
   position: absolute;
-  width: 40px;  /* Adjust size as needed */
-  height: 40px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="%23ffffff" stroke-width="2" d="M4 2h12l4 4v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path fill="none" stroke="%23ffffff" stroke-width="2" d="M14 2v4h4"/></svg>');
+  width: 30px;
+  height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.8;
-  /* Apply a floating animation */
-  animation: floatParticle 20s ease-in-out infinite;
+  opacity: 0.6;
+  animation: float 20s infinite linear;
 }
 
-/* Keyframes for gentle floating motion */
-@keyframes floatParticle {
-  0%   { transform: translate(0, 0); }
-  25%  { transform: translate(10px, -10px); }
-  50%  { transform: translate(0, 10px); }
-  75%  { transform: translate(-10px, 0); }
-  100% { transform: translate(0, 0); }
+/* Keyframes for floating motion */
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-100vh) rotate(360deg); }
 }
