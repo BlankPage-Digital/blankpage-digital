@@ -16,11 +16,6 @@
 \*-----------------------------------*/
 
 :root {
-
-  /**
-   * colors
-   */
-
   /* gradient */
 --bg-gradient-onyx: linear-gradient(...); /* Keep original */
 --bg-gradient-jet: linear-gradient(...); /* Keep original */
@@ -479,7 +474,7 @@ main {
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
 
-.navbar-link.active { color: #5928B1 !important; }
+.navbar-link.active { color: var(--primary-color); }
 
 
 /* Download CV Button styles */
@@ -490,7 +485,7 @@ main {
   display: inline-block;
   padding: 10px 20px;
   background: transparent;
-  color: #5928B1; /* Same purple as your other text */
+  color: var(--primary-color);
   border: 1px solid #5928B1;
   border-radius: 4px; /* Slightly rounded corners */
   text-transform: uppercase;
@@ -498,7 +493,7 @@ main {
   transition: background 0.3s ease, color 0.3s ease;
 }
 .download-btn:hover {
-  background: #5928B1;
+  background: var(--primary-color);
   color: #fff;
 }
 
