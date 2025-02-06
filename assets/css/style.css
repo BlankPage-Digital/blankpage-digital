@@ -481,14 +481,19 @@ main {
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
   .sidebar {
-    width: 100vw; /* Full viewport width */
-    max-width: 100%; /* Ensure it doesn't exceed screen width */
-    /* Adjust the height to cover the profile picture plus spacing */
-    max-height: calc(150px + 30px); /* Profile picture height + extra space */
+    width: 100%; /* Full width on mobile */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
   }
 
+  /* Collapsed state: Adjust height to cover up to the title */
+  .sidebar:not(.active) {
+    height: calc(150px + 10px + var(--fs-3) + 10px + var(--fs-8) + 30px);
+    overflow: hidden;
+  }
+
+  /* Expanded state: Let it expand to fit content */
   .sidebar.active {
-    max-height: none; /* Allow full expansion when active */
+    height: auto;
   }
 
   .sidebar-info {
@@ -498,11 +503,21 @@ main {
   }
 
   .avatar-box {
-    margin-bottom: 15px; /* Space below the profile picture */
+    margin-bottom: 10px;
   }
 
+  .info_more-btn {
+    top: 10px;
+    right: 10px;
+  }
+
+  /* Adjust .sidebar-info_more */
   .sidebar-info_more {
-    max-height: none; /* Allow full height when expanded */
+    max-height: 0;
+  }
+
+  .sidebar.active .sidebar-info_more {
+    max-height: none;
   }
 }
 
