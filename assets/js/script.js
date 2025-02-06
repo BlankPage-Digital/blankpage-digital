@@ -82,7 +82,7 @@ const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
-    if (selectedValue === "all") {
+    if (selectedValue === "all", "alla", "toate") {
       filterItems[i].classList.add("active");
       filterItems[i].style.display = 'block'; // ensure it's visible
     } else if (selectedValue === filterItems[i].dataset.category) {
