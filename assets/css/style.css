@@ -52,7 +52,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Inter', sans-serif !important;
+  --ff-primary: 'Inter', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -92,7 +92,7 @@
 /* ========= Ensure Global Defaults on Body ========= */
 body {
   background-color: var(--background-lang-color);
-  font-family: var(--ff-poppins); !important
+  font-family: var(--ff-primary); !important
   margin: 0; /* Remove any default margins causing white space */
 }
 
@@ -157,7 +157,7 @@ input, textarea {
 
 :focus { outline-color: var(--primary-color); }
 
-html { font-family: var(--ff-poppins); }
+html { font-family: var(--ff-primary); }
 
 body {
   background-color: var(--background-lang-color);
