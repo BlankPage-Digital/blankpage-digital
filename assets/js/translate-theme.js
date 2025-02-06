@@ -257,7 +257,7 @@ function updateTranslations(lang) {
 function updateTheme(lang) {
   const theme = themes[lang];
   document.documentElement.style.setProperty('--primary-color', theme.primary);
-  document.documentElement.style.setProperty('--background-color', theme.background);
+  document.documentElement.style.setProperty('--background-lang-color', theme.background);
 }
 
 // Set up language switcher event listener.
