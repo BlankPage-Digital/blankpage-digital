@@ -336,12 +336,10 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
-  overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { }
 
 .sidebar-info {
   position: relative;
@@ -472,11 +470,39 @@ main {
   font-size: 18px;
 }
 
-
 .social-item .social-link:hover { color: var(--light-gray); }
 
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+  .info_more-btn {
+    top: 10px;
+    right: 10px;
+  }
 
+  .sidebar-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .avatar-box {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 601px) {
+  .sidebar {
+    max-height: 112px;
+    overflow: hidden;
+  }
+
+  .sidebar.active {
+    max-height: 405px;
+  }
+}
 
 
 /*-----------------------------------*\
@@ -1437,7 +1463,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 580px screen
  */
 
-@media (min-width: 580px) {
+ (min-width: 580px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1724,7 +1750,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 768px screen
  */
 
-@media (min-width: 768px) {
+ (min-width: 768px) {
 
   /**
    * REUSED STYLE
@@ -1824,7 +1850,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 1024px screen
  */
 
-@media (min-width: 1024px) {
+ (min-width: 1024px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1939,7 +1965,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 1250px screen
  */
 
-@media (min-width: 1250px) {
+ (min-width: 1250px) {
 
   /**
    * RESET
