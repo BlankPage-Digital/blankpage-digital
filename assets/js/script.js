@@ -182,43 +182,6 @@ document.querySelectorAll('.modal-close-btn').forEach(btn => {
   });
 });
 
-/* Modal overlay */
-.blog-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-.blog-modal.hidden {
-  display: none;
-}
-/* Modal content */
-.blog-modal-content {
-  background: var(--eerie-black-2);
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 800px;
-  width: 90%;
-  position: relative;
-}
-/* Close button */
-.modal-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  color: var(--white-2);
-  cursor: pointer;
-}
-
 
  /* Language settings */
   document.getElementById('language-select').addEventListener('change', function() {
@@ -233,3 +196,29 @@ document.querySelectorAll('.modal-close-btn').forEach(btn => {
     }
   });
 
+// When a blog post is clicked...
+document.querySelectorAll('.blog-post-item a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    // Retrieve data attributes from the clicked link:
+    var imgSrc = link.getAttribute('data-img');
+    var title = link.getAttribute('data-title');
+    var body = link.getAttribute('data-body');
+    // Populate the modal with the data:
+    document.getElementById('blog-modal-img').src = imgSrc;
+    document.getElementById('blog-modal-title').innerText = title;
+    document.getElementById('blog-modal-body').innerHTML = body;
+    // Show the modal:
+    document.getElementById('blog-modal').classList.remove('hidden');
+  });
+});
+// Close modal on clicking the close button:
+document.getElementById('blog-modal-close').addEventListener('click', function() {
+  document.getElementById('blog-modal').classList.add('hidden');
+});
+// Optional: close modal when clicking outside the content area:
+document.getElementById('blog-modal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    this.classList.add('hidden');
+  }
+});
