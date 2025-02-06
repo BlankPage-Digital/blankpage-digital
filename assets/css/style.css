@@ -334,8 +334,6 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
-/* Your existing sidebar styles */
-
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
@@ -343,9 +341,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active {
-  max-height: 405px;
-}
+.sidebar.active { max-height: 405px; }
 
 .sidebar-info {
   position: relative;
@@ -412,18 +408,12 @@ main {
 }
 
 .info_more-btn:hover,
-.info_more-btn:focus {
-  background: var(--bg-gradient-yellow-1);
-}
+.info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
 
 .info_more-btn:hover::before,
-.info_more-btn:focus::before {
-  background: var(--bg-gradient-yellow-2);
-}
+.info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
 
-.info_more-btn span {
-  display: none;
-}
+.info_more-btn span { display: none; }
 
 .sidebar-info_more {
   opacity: 0;
@@ -466,9 +456,7 @@ main {
   font-size: var(--fs-7);
 }
 
-.contact-info address {
-  font-style: normal;
-}
+.contact-info address { font-style: normal; }
 
 .social-list {
   display: flex;
@@ -484,58 +472,10 @@ main {
   font-size: 18px;
 }
 
-.social-item .social-link:hover {
-  color: var(--light-gray);
-}
 
-/* Mobile Styles */
-@media screen and (max-width: 600px) {
-  /* Adjust the size of the avatar box */
-  .avatar-box {
-    width: 120px;
-    height: 120px;
-  }
+.social-item .social-link:hover { color: var(--light-gray); }
 
-  /* Center the sidebar content */
-  .sidebar-info {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  /* Adjust the font sizes for better readability on mobile */
-  .info-content .name {
-    font-size: var(--fs-4); /* Adjust as needed */
-  }
-
-  .info-content .title {
-    font-size: var(--fs-7); /* Adjust as needed */
-  }
-
-  /* Make the sidebar full-width and adjust layout on mobile */
-  .sidebar {
-    width: 100%;            /* Full width on mobile */
-    max-height: none;       /* Allow it to expand */
-    overflow: visible;      /* Show all content */
-    position: relative;     /* Change position to flow with the content */
-  }
-
-  /* Adjust the position of the "Show Contacts" button */
-  .info_more-btn {
-    top: 10px;
-    right: 10px;
-  }
-
-  /* Optional: Adjust the gap between items */
-  .sidebar-info {
-    gap: 10px;
-  }
-
-  /* Optional: Add margin below the avatar */
-  .avatar-box {
-    margin-bottom: 10px;
-  }
-}
 
 
 
@@ -1497,7 +1437,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 580px screen
  */
 
- (min-width: 580px) {
+@media (min-width: 580px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1784,7 +1724,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 768px screen
  */
 
- (min-width: 768px) {
+@media (min-width: 768px) {
 
   /**
    * REUSED STYLE
@@ -1884,7 +1824,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 1024px screen
  */
 
- (min-width: 1024px) {
+@media (min-width: 1024px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1999,7 +1939,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 1250px screen
  */
 
- (min-width: 1250px) {
+@media (min-width: 1250px) {
 
   /**
    * RESET
