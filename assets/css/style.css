@@ -334,20 +334,19 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
-/* Sidebar Styles */
+/* Your existing sidebar styles */
+
 .sidebar {
   margin-bottom: 15px;
-  padding-top: 15px;    /* Added top padding for natural spacing */
-  padding-bottom: 15px; /* Added bottom padding */
-  height: 180px;        /* Adjusted height to match profile picture plus padding */
-  overflow: hidden;     /* Hide overflow */
+  max-height: 112px;
+  overflow: hidden;
   transition: var(--transition-2);
 }
 
-/* Removed .sidebar.active styles since we're not expanding the sidebar */
-.sidebar.active { }  /* You can remove this if not used elsewhere */
+.sidebar.active {
+  max-height: 405px;
+}
 
-/* Sidebar Info */
 .sidebar-info {
   position: relative;
   display: flex;
@@ -356,14 +355,12 @@ main {
   gap: 15px;
 }
 
-/* Avatar Box */
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 12px;
   overflow: hidden;
   width: 150px;
   height: 150px;
-  margin-bottom: 15px; /* Added margin for natural spacing below the avatar */
 }
 
 .avatar-box img {
@@ -372,7 +369,6 @@ main {
   object-fit: cover;
 }
 
-/* Info Content */
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -391,36 +387,61 @@ main {
   border-radius: 8px;
 }
 
-/* Removed .info_more-btn styles since the button is no longer needed */
-/* If you still have the .info_more-btn element in your HTML, you can safely remove these styles as well */
 .info_more-btn {
-  /* Removed styles */
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border-radius: 0 15px;
+  font-size: 13px;
+  color: var(--primary-color);
+  background: var(--border-gradient-onyx);
+  padding: 10px;
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
+  z-index: 1;
 }
 
-.info_more-btn::before,
+.info_more-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--bg-gradient-jet);
+  transition: var(--transition-1);
+  z-index: -1;
+}
+
 .info_more-btn:hover,
-.info_more-btn:focus,
-.info_more-btn:hover::before,
-.info_more-btn:focus::before,
-.info_more-btn span {
-  /* Removed styles */
+.info_more-btn:focus {
+  background: var(--bg-gradient-yellow-1);
 }
 
-/* Removed .sidebar-info_more styles since we're not showing additional content */
+.info_more-btn:hover::before,
+.info_more-btn:focus::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.info_more-btn span {
+  display: none;
+}
+
 .sidebar-info_more {
-  /* Removed styles */
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-2);
 }
 
 .sidebar.active .sidebar-info_more {
-  /* Removed styles */
+  opacity: 1;
+  visibility: visible;
 }
 
-/* Contacts List */
 .contacts-list {
-  display: none; /* Hide the contacts list */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 
-/* Contact Item */
 .contact-item {
   min-width: 100%;
   display: flex;
@@ -449,9 +470,13 @@ main {
   font-style: normal;
 }
 
-/* Social List */
 .social-list {
-  display: none; /* Hide social links in the sidebar */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 4px;
+  padding-left: 7px;
 }
 
 .social-item .social-link {
@@ -465,38 +490,51 @@ main {
 
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
-  .sidebar {
-    width: 100%;          /* Full width on mobile */
-    height: auto;         /* Let the height adjust automatically */
-    padding-top: 20px;    /* Adjusted padding for mobile */
-    padding-bottom: 20px;
-    overflow: visible;    /* Ensure content is visible */
+  /* Adjust the size of the avatar box */
+  .avatar-box {
+    width: 120px;
+    height: 120px;
   }
 
+  /* Center the sidebar content */
   .sidebar-info {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .avatar-box {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px;
-  }
-
+  /* Adjust the font sizes for better readability on mobile */
   .info-content .name {
-    font-size: var(--fs-4); /* Adjusted font size for mobile */
+    font-size: var(--fs-4); /* Adjust as needed */
   }
 
   .info-content .title {
-    font-size: var(--fs-7); /* Adjusted font size for mobile */
+    font-size: var(--fs-7); /* Adjust as needed */
   }
-}
 
-/* Desktop Styles */
-@media screen and (min-width: 601px) {
-  /* No changes needed here since the sidebar height is fixed */
+  /* Make the sidebar full-width and adjust layout on mobile */
+  .sidebar {
+    width: 100%;            /* Full width on mobile */
+    max-height: none;       /* Allow it to expand */
+    overflow: visible;      /* Show all content */
+    position: relative;     /* Change position to flow with the content */
+  }
+
+  /* Adjust the position of the "Show Contacts" button */
+  .info_more-btn {
+    top: 10px;
+    right: 10px;
+  }
+
+  /* Optional: Adjust the gap between items */
+  .sidebar-info {
+    gap: 10px;
+  }
+
+  /* Optional: Add margin below the avatar */
+  .avatar-box {
+    margin-bottom: 10px;
+  }
 }
 
 
