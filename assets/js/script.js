@@ -137,22 +137,18 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 // page navigation variables
+// Page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 navigationLinks.forEach(link => {
   link.addEventListener("click", function () {
-    // Remove active class from all nav buttons
     navigationLinks.forEach(nav => nav.classList.remove("active"));
     this.classList.add("active");
 
-    const targetKey = this.getAttribute("data-nav");
+    const targetKey = this.dataset.nav;
     pages.forEach(page => {
-      if (page.getAttribute("data-page") === targetKey) {
-        page.classList.add("active");
-      } else {
-        page.classList.remove("active");
-      }
+      page.classList.toggle("active", page.dataset.page === targetKey);
     });
     window.scrollTo(0, 0);
   });
@@ -184,19 +180,13 @@ document.querySelectorAll('.modal-close-btn').forEach(btn => {
 
 
  /* Language settings */
-<script>
-  document.getElementById('language-select').addEventListener('change', function() {
-    document.body.classList.remove('lang-en', 'lang-sv', 'lang-ro');
-    var lang = this.value;
-    if(lang === 'en') {
-      document.body.classList.add('lang-en');
-    } else if(lang === 'sv') {
-      document.body.classList.add('lang-sv');
-    } else if(lang === 'ro') {
-      document.body.classList.add('lang-ro');
-    }
-  });
-</script>
+
+document.getElementById('language-select').addEventListener('change', function() {
+  document.body.classList.remove('lang-en', 'lang-sv', 'lang-ro');
+  const lang = this.value;
+  document.body.classList.add(`lang-${lang}`);
+  updateTextElements(lang);
+});
 
 const translations = {
   en: {
