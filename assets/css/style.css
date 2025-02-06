@@ -30,7 +30,7 @@
   rgba(89,40,177,0) 59.86%
 ), hsl(240, 2%, 13%);
 --border-gradient-onyx: linear-gradient(...);
---text-gradient-yellow: linear-gradient(to right, #5928B1, #7a52cc);
+--text-gradient-lang: linear-gradient(to right, #5928B1, #7a52cc);
 
   /* solid */
 --jet: hsl(0, 0%, 22%);
@@ -40,7 +40,7 @@
 --smoky-black: hsl(0, 0%, 7%);
 --white-1: hsl(0, 0%, 100%);
 --white-2: hsl(0, 0%, 98%);
---primary-color: #5928B1;
+--primary-color: #5928B1; /* English primary accent */
 --vegas-gold: #7a52cc;
 --light-gray: hsl(0, 0%, 84%);
 --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -89,8 +89,30 @@
 
 }
 
+/* ========= Ensure Global Defaults on Body ========= */
+body {
+  background-color: var(--background-lang-color);
+  font-family: var(--ff-poppins);
+  margin: 0; /* Remove any default margins causing white space */
+}
 
+body.lang-en {
+  --primary-color: #5928B1;
+  --background-lang-color: #3D2B42;
+  --text-gradient-lang: linear-gradient(to right, #5928B1, #7a52cc);
+}
 
+body.lang-sv {
+  --primary-color: #001A8F;
+  --background-lang-color: #3D4C7B;
+  --text-gradient-lang: linear-gradient(to right, #001A8F, #3D4C7B);
+}
+
+body.lang-ro {
+  --primary-color: #9B0000;
+  --background-lang-color: #7A3B3B;
+  --text-gradient-lang: linear-gradient(to right, #9B0000, #7A3B3B);
+}
 
 
 /*-----------------------------------*\
@@ -231,7 +253,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-lang);
   border-radius: 3px;
 }
 
@@ -953,7 +975,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-lang);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -997,7 +1019,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-lang);
   height: 100%;
   border-radius: inherit;
 }
