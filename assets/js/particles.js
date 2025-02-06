@@ -1,16 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
   const container = document.body;
-  const particleCount = 30;
+  const particleCount = 60; // Increased from 30
 
   // Create particles
   for (let i = 0; i < particleCount; i++) {
     const particle = document.createElement('div');
+    particle.className = 'particle'; // Add class for new styling
     particle.style.cssText = `
       position: fixed;
-      width: ${Math.random() * 5 + 2}px;
-      height: ${Math.random() * 5 + 2}px;
-      background: rgba(89,40,177,${Math.random() * 0.4 + 0.2});
-      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="%235928B1" stroke-width="2" d="M4 2h12l4 4v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path fill="none" stroke="%235928B1" stroke-width="2" d="M14 2v4h4"/></svg>');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.6;
       pointer-events: none;
       z-index: -1;
     `;
