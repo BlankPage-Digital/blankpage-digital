@@ -183,4 +183,19 @@ document.querySelectorAll('.modal-close-btn').forEach(btn => {
 });
 
 
+ /* Language settings */
+<script>
+  document.getElementById('language-select').addEventListener('change', function() {
+    document.body.classList.remove('lang-en', 'lang-sv', 'lang-ro');
+    var lang = this.value;
+    if(lang === 'en') {
+      document.body.classList.add('lang-en');
+    } else if(lang === 'sv') {
+      document.body.classList.add('lang-sv');
+    } else if(lang === 'ro') {
+      document.body.classList.add('lang-ro');
+    }
+  });
+</script>
+
 
