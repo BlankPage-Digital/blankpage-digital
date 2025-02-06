@@ -182,6 +182,43 @@ document.querySelectorAll('.modal-close-btn').forEach(btn => {
   });
 });
 
+/* Modal overlay */
+.blog-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.blog-modal.hidden {
+  display: none;
+}
+/* Modal content */
+.blog-modal-content {
+  background: var(--eerie-black-2);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+}
+/* Close button */
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--white-2);
+  cursor: pointer;
+}
+
 
  /* Language settings */
   document.getElementById('language-select').addEventListener('change', function() {
