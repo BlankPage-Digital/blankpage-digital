@@ -117,15 +117,15 @@ body.lang-en {
 }
 
 body.lang-sv {
-  --primary-color: #001A8F;
-  --background-lang-color: #3D4C7B;
-  --text-gradient-lang: linear-gradient(to right, #001A8F, #3D4C7B);
+  --primary-color: #006AA7;
+  --background-lang-color: #1B263B;
+  --text-gradient-lang: linear-gradient(to right, #006AA7, #3A7CA5);
 }
 
 body.lang-ro {
-  --primary-color: #9B0000;
-  --background-lang-color: #7A3B3B;
-  --text-gradient-lang: linear-gradient(to right, #9B0000, #7A3B3B);
+  --primary-color: #F77F00;
+  --background-lang-color: #2B2118;
+  --text-gradient-lang: linear-gradient(to right, #F77F00, #D62828);
 }
 
 body:not([class*="lang-"]) {
