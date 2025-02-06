@@ -16,6 +16,11 @@
 \*-----------------------------------*/
 
 :root {
+  --primary-color: #5928B1;  /* English primary */
+  --background-color: #3D2B42;  /* English background */
+  /* ... keep your other custom properties ... */
+}
+
 
   /**
    * colors
@@ -138,7 +143,7 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body {
-  background-color: #3D2B42;
+  background-color: var(--background-color);
   /* other existing styles */
 }
 
@@ -177,7 +182,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--orange-yellow-crayola);
+  color: var(--primary-color);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -236,7 +241,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--primary-color);
   border-radius: 3px;
 }
 
@@ -479,7 +484,7 @@ main {
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
 
-.navbar-link.active { color: #5928B1 !important; }
+.navbar-link.active { color: var(--primary-color) !important; }
 
 
 /* Download CV Button styles */
