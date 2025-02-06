@@ -84,15 +84,19 @@ const filterFunc = function (selectedValue) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
+      filterItems[i].style.display = 'block'; // ensure it's visible
     } else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
+      filterItems[i].style.display = 'block'; // ensure it's visible
     } else {
       filterItems[i].classList.remove("active");
+      filterItems[i].style.display = 'none'; // hide the item
     }
 
   }
 
 }
+
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
