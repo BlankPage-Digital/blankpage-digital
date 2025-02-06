@@ -341,7 +341,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: none; }
 
 .sidebar-info {
   position: relative;
@@ -426,6 +426,7 @@ main {
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
+  max-height: 1000px; /* Set a large max-height to allow expansion */
 }
 
 .contacts-list {
@@ -480,9 +481,14 @@ main {
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
   .sidebar {
-    width: 100vw; /* Full width of the viewport */
-    max-width: 100%; /* Ensure it doesn't exceed the screen width */
-    height: calc(150px + 30px); /* Height to cover profile picture plus extra space */
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Ensure it doesn't exceed screen width */
+    /* Adjust the height to cover the profile picture plus spacing */
+    max-height: calc(150px + 30px); /* Profile picture height + extra space */
+  }
+
+  .sidebar.active {
+    max-height: none; /* Allow full expansion when active */
   }
 
   .sidebar-info {
@@ -492,7 +498,11 @@ main {
   }
 
   .avatar-box {
-    margin-bottom: 15px; /* Additional space below the profile picture */
+    margin-bottom: 15px; /* Space below the profile picture */
+  }
+
+  .sidebar-info_more {
+    max-height: none; /* Allow full height when expanded */
   }
 }
 
