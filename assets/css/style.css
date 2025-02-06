@@ -482,6 +482,7 @@ main {
   .sidebar {
     width: 100vw; /* Full width of the viewport */
     max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    height: calc(150px + 30px); /* Height to cover profile picture plus extra space */
   }
 
   .sidebar-info {
