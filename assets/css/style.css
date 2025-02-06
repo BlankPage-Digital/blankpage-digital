@@ -389,7 +389,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(-text-gradient-lang);
+  color: var(--primary-color);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -411,7 +411,7 @@ main {
 .info_more-btn:focus { background: var(--bg-gradient-yellow-2); }
 
 .info_more-btn:hover::before,
-.info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
+.info_more-btn:focus::before { background: var(--text-gradient-lang); }
 
 .info_more-btn span { display: none; }
 
