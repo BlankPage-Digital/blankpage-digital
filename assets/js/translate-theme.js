@@ -317,24 +317,19 @@ function updateTheme(lang) {
   document.documentElement.style.setProperty('--background-lang-color', theme.background);
 }
 
-// Set up language switcher event listener
+// Set up language switcher event listener.
 document.getElementById('language-select').addEventListener('change', function() {
-  const activePage = document.querySelector('[data-page].active').dataset.page;
+  // Remove language classes (if you use them elsewhere)
   document.body.classList.remove('lang-en', 'lang-sv', 'lang-ro');
-
-  const lang = this.value;
-  document.body.classList.add(`lang-${lang}`);
+  var lang = this.value;
+  if (lang === 'en') {
+    document.body.classList.add('lang-en');
+  } else if (lang === 'sv') {
+    document.body.classList.add('lang-sv');
+  } else if (lang === 'ro') {
+    document.body.classList.add('lang-ro');
+  }
+  // Update translations and theme colours
   updateTranslations(lang);
   updateTheme(lang);
-  setTimeout(() => {
-    document.querySelectorAll('[data-page]').forEach(page => {
-      page.classList.remove('active');
-    });
-    document.querySelector(`[data-page="${activePage}"]`).classList.add('active');
-    
-    document.querySelectorAll('[data-nav-link]').forEach(link => {
-      link.classList.remove('active');
-    });
-    document.querySelector(`[data-nav-link][data-page="${activePage}"]`).classList.add('active');
-  }, 50);
 });
