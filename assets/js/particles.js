@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     particle.style.top = Math.random() * 100 + 'vh';
 
     // Animation logic
-    const speed = Math.random() * 1;
+    const speed = Math.random() * 0;
     const angle = Math.random() * 360;
     setInterval(() => {
       const x = parseFloat(particle.style.left) + Math.cos(angle) * speed;
