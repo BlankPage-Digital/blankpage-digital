@@ -481,7 +481,7 @@ main {
 
 .navbar-link.active { color: #5928B1 !important; }
 
-/* Add these rules */
+/* Language button */
 .dropdown {
   display: inline-block;
   position: relative;
@@ -491,7 +491,7 @@ main {
 .dropbtn {
   background: none;
   border: none;
-  color: var(--primary-color);
+  color: #ffffff;
   cursor: pointer;
   font-size: 1em;
   padding: 0;
