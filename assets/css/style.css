@@ -416,6 +416,8 @@ main {
 .info_more-btn span { display: none; }
 
 .sidebar-info_more {
+  max-height: none; /* Ensure full expansion */
+  overflow: visible; /* Show all content */
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-2);
@@ -474,10 +476,12 @@ main {
 
 
 .social-item .social-link:hover { color: var(--light-gray); }
+
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
   .sidebar {
-    width: calc(150px + 30px); /* Width of the profile picture plus extra space */
+    width: 100vw; /* Full width of the viewport */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
   }
 
   .sidebar-info {
@@ -490,6 +494,7 @@ main {
     margin-bottom: 15px; /* Additional space below the profile picture */
   }
 }
+
 
 
 
