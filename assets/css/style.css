@@ -2059,17 +2059,3 @@ textarea.form-input::-webkit-resizer { display: none; }
   75%  { transform: translate(-10px, 0); }
   100% { transform: translate(0, 0); }
 }
-
-/* Fallback */
-body.lang-en {
-  --primary-color: #5928B1;
-  --background-color: #3D2B42;
-}
-body.lang-sv {
-  --primary-color: #001A8F;
-  --background-color: #3D4C7B;
-}
-body.lang-ro {
-  --primary-color: #9B0000;
-  --background-color: #7A3B3B;
-}
