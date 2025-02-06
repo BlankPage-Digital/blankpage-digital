@@ -744,130 +744,106 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="nav_portfolio">
+<article class="portfolio" data-page="nav_portfolio">
 
-        <header>
-          <h2 class="h2 article-title" data-i18n="portfolio_heading">Portfolio</h2>
-        </header>
+    <header>
+        <h2 class="h2 article-title" data-i18n="portfolio_heading">Portfolio</h2>
+    </header>
 
-        <section class="projects">
+    <section class="projects">
 
-          <ul class="filter-list">
+        <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn data-i18n="portfolio_filter_all">All</button>
+                <button class="active" data-filter-btn data-filter="all" data-i18n="portfolio_filter_all">All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn data-i18n="portfolio_filter_wp">WordPress</button>
+                <button data-filter-btn data-filter="wordpress" data-i18n="portfolio_filter_wp">WordPress</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn data-i18n="portfolio_filter_shopify">Shopify</button>
+                <button data-filter-btn data-filter="shopify" data-i18n="portfolio_filter_shopify">Shopify</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn data-i18n="portfolio_filter_github">GitHub</button>
+                <button data-filter-btn data-filter="github" data-i18n="portfolio_filter_github">GitHub</button>
             </li>
 
-          </ul>
+        </ul>
 
-          <div class="filter-select-box">
-
+        <div class="filter-select-box">
             <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value data-i18n="category_port_dp">Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
+                <div class="select-value" data-select-value data-i18n="category_port_dp">Select category</div>
+                <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>
             </button>
 
             <ul class="select-list">
+                <li class="select-item">
+                    <button data-select-item data-filter="all" data-i18n="portfolio_filter_o1">All</button>
+                </li>
 
-              <li class="select-item">
-                <button data-select-item data-i18n="portfolio_filter_o1">All</button>
-              </li>
+                <li class="select-item">
+                    <button data-select-item data-filter="wordpress" data-i18n="portfolio_filter_o2">WordPress</button>
+                </li>
 
-              <li class="select-item">
-                <button data-select-item data-i18n="portfolio_filter_o2">WordPress</button>
-              </li>
+                <li class="select-item">
+                    <button data-select-item data-filter="shopify" data-i18n="portfolio_filter_o3">Shopify</button>
+                </li>
 
-              <li class="select-item">
-                <button data-select-item data-i18n="portfolio_filter_o3">Shopify</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item data-i18n="portfolio_filter_o4">GitHub</button>
-              </li>
-
+                <li class="select-item">
+                    <button data-select-item data-filter="github" data-i18n="portfolio_filter_o4">GitHub</button>
+                </li>
             </ul>
+        </div>
 
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="github">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project_coming_soon.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Coming Soon</h3>
-
-                <p class="project-category">GitHub</p>
-
-              </a>
+        <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="github">
+                <a href="#">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="./assets/images/project_coming_soon.png" alt="finance" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Coming Soon</h3>
+                    <p class="project-category">GitHub</p>
+                </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="shopify">
-              <a href="https://hqshopmobile.com/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project_1_cover.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">HQShopMobile</h3>
-
-                <p class="project-category">Shopify</p>
-
-              </a>
+            <li class="project-item active" data-filter-item data-category="shopify">
+                <a href="https://hqshopmobile.com/">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="./assets/images/project_1_cover.png" alt="orizon" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">HQShopMobile</h3>
+                    <p class="project-category">Shopify</p>
+                </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="wordpress">
-              <a href="https://daimondbucuresti.com/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project_2_cover.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Club DaimonD București</h3>
-
-                <p class="project-category">WordPress</p>
-
-              </a>
+            <li class="project-item active" data-filter-item data-category="wordpress">
+                <a href="https://daimondbucuresti.com/">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="./assets/images/project_2_cover.png" alt="fundo" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Club DaimonD București</h3>
+                    <p class="project-category">WordPress</p>
+                </a>
             </li>
+        </ul>
 
+    </section>
 
-          </ul>
+</article>
 
-        </section>
-
-      </article>
 
 
 
