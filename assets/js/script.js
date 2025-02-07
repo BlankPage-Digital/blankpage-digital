@@ -161,27 +161,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
-
-// --- Certifications Modal Functionality ---
-// Attach event listeners to certifications items.
-document.querySelectorAll('.certifications-item').forEach(item => {
-  item.addEventListener('click', function () {
-    // Get the PDF file name from a data attribute on the certification item.
-    const file = this.getAttribute('data-certification-file');
-    const modal = document.querySelector('.certifications-modal');
-    // Set the modal title to the certification's title text.
-    modal.querySelector('[data-modal-title]').textContent = this.querySelector('.testimonials-item-title').textContent;
-    // Set the iframe src to load the PDF from your assets.
-    modal.querySelector('[data-modal-iframe]').setAttribute('src', './assets/files/' + file);
-    modal.classList.add('active');
-  });
-});
-
-// Close the modal when the close button is clicked.
-document.querySelectorAll('.modal-close-btn').forEach(btn => {
-  btn.addEventListener('click', function () {
-    const modal = this.closest('.modal-container');
-    modal.classList.remove('active');
-    modal.querySelector('[data-modal-iframe]').setAttribute('src', '');
-  });
-});
