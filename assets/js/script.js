@@ -162,7 +162,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
 // --- Certifications Modal Functionality ---
 // Attach event listeners to certifications items.
 document.querySelectorAll('.certifications-item').forEach(item => {
@@ -186,4 +185,3 @@ document.querySelectorAll('.modal-close-btn').forEach(btn => {
     modal.querySelector('[data-modal-iframe]').setAttribute('src', '');
   });
 });
-
