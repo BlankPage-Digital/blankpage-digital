@@ -161,3 +161,40 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+// Add this to your existing JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('[data-filter-btn]');
+  const selectBtns = document.querySelectorAll('[data-select-item]');
+  const projectItems = document.querySelectorAll('[data-filter-item]');
+  
+  function filterProjects(category) {
+    projectItems.forEach(item => {
+      if (category === 'all' || item.dataset.category === category) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  }
+  
+  // For main filter buttons
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterProjects(btn.dataset.category);
+    });
+  });
+  
+  // For select dropdown
+  selectBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectValue = document.querySelector('[data-selecct-value]');
+      if (selectValue) {
+        selectValue.textContent = btn.textContent.trim();
+      }
+      filterProjects(btn.dataset.category);
+    });
+  });
+});
