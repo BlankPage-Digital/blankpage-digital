@@ -732,35 +732,40 @@
           </section>
         </article>
         
-<!-- BLOG SECTION -->
+<!-- BLOG SECTION (Replace your existing <article class="blog" ...> block with the following) -->
 <article class="blog" data-page="nav_blog">
   <header>
     <h2 class="h2 article-title" data-i18n="blog_heading">Blog</h2>
   </header>
   <section class="blog-posts">
     <ul class="blog-posts-list">
+      <!-- Example of one blog post item; duplicate for additional posts -->
       <li class="blog-post-item" data-blog-item data-i18n="blog_post_item">
-        <div class="blog-preview" data-blog-preview>
+        <!-- Wrapping the preview in a container that we mark as clickable -->
+        <div class="blog-preview" data-blog-preview style="cursor: pointer;">
           <figure class="blog-banner-box">
+            <!-- Cover image for preview (note the data attribute) -->
             <img src="./assets/images/project_coming_soon.png" alt="Coming Soon" loading="lazy" data-blog-cover>
           </figure>
           <div class="blog-content">
-            <h3 class="h3 blog-item-title" data-blog-title data-i18n="blog_post_title1">
+            <!-- Title and preview text for the blog post -->  
+            <h3 class="h3 blog-item-title" data-blog-title data-i18n="blog_post_title">
               New blog post coming soon!
             </h3>
-            <p class="blog-text" data-blog-preview-text data-i18n="blog_post_preview1">
+            <p class="blog-text" data-blog-preview-text data-i18n="blog_post_preview">
               Stay tuned!
             </p>
           </div>
-          <!-- (Optional) Extra images can be added here with data-extra-image if needed -->
+          <!-- Optional: Insert any extra images here if desired, with data-extra-image -->
           <!-- <img src=\"./assets/images/extra_image1.jpg\" alt=\"Extra image\" data-extra-image> --> 
         </div>
       </li>
+      <!-- Repeat for each blog post -->
     </ul>
   </section>
 </article>
 
-<!-- #BLOG MODAL -->
+<!-- BLOG MODAL (Place this block at the end of your <main> or just before the closing </body> tag) -->
 <div class="modal-container" data-blog-modal-container>
   <div class="overlay" data-blog-overlay></div>
   <section class="blog-modal" data-blog-modal>
@@ -769,25 +774,24 @@
     </button>
     <div class="modal-content">
       <figure class="modal-banner-box">
-        <img src="assets/images/REPLACE HERE IMAGE SOURCE" alt="" data-modal-blog-cover>
+        <!-- This image will be updated dynamically to show the blog cover -->
+        <img src="" alt="" data-modal-blog-cover>
       </figure>
-      <h3 class="h3 modal-title" data-modal-blog-title data-i18n="blog_modal_title1"></h3>
-      <time datetime="" data-modal-blog-date data-i18n="blog_modal_date1"></time>
-      <div class="modal-text" data-modal-blog-text data-i18n="blog_modal_text1"></div>
+      <h3 class="h3 modal-title" data-modal-blog-title data-i18n="blog_modal_title"></h3>
+      <time datetime="" data-modal-blog-date data-i18n="blog_modal_date"></time>
+      <div class="modal-text" data-modal-blog-text data-i18n="blog_modal_text"></div>
       <!-- Container for any extra images that might be part of the blog post -->
       <div class="modal-extra-images" data-modal-blog-extra-images></div>
     </div>
   </section>
 </div>
-
-      </div>
     </main>
     
     <!-- #SCRIPTS -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/particles.js"></script>
     <script src="assets/js/translate-theme.js"></script>
-    <script src="./assets/js/blogmodal.js"></script>
+    <script src="./assets/js/blog-modal.js"></script>
 
     <!-- #ION LINKSCRIPTS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
