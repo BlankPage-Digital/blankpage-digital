@@ -4,28 +4,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // Define detailed package information
   const packageDetails = {
     'free': {
-      title: 'Free Consultation Details',
-      details: '<p>Includes a complimentary 1-hour consultation where we assess your current digital presence and provide personalized suggestions to boost your strategy.</p>'
+      title: 'Free Consultation (1 Hour)',
+      details: '<p>Get a complimentary 1-hour consultation where we assess your current digital presence and discuss potential improvements. *This session is free.</p>'
     },
     'strategy': {
-      title: 'Strategy & IT Operations Details',
-      details: '<p>This package offers 60 hours per month of professional consulting focused on developing your digital strategy and optimizing IT operations, including platform assessments, roadmap creation, and ongoing support.</p>'
+      title: 'Strategy & IT Operations (Per Hour)',
+      details: '<p>This package provides professional consulting at 200 SEK per hour. We help you develop a robust digital strategy, set up your online platforms, and optimize your IT operations. Prices may vary based on the complexity of the project.</p>'
     },
     'website-small': {
-      title: 'Website Development – Small Details',
-      details: '<p>Ideal for a simple, static website hosted on GitHub. This package covers basic design, content integration, and deployment to create a professional online presence.</p>'
+      title: 'Website Development – Small',
+      details: '<p>A basic static website hosted on GitHub, perfect for establishing a simple online presence. Includes custom design, content integration, and deployment. Price is fixed at 100 SEK; additional features may increase the cost.</p>'
     },
     'website-standard': {
-      title: 'Website Development – Standard Details',
-      details: '<p>For dynamic websites built on WordPress or Shopify. This package includes custom design, interactive features, and e-commerce integration for a comprehensive solution.</p>'
+      title: 'Website Development – Standard',
+      details: '<p>A dynamic website built on WordPress or Shopify, featuring interactive elements and a tailored design. This package is priced at 500 SEK, with final cost depending on project complexity.</p>'
     },
     'website-premium': {
-      title: 'Website Development – Premium Details',
-      details: '<p>Designed for large and complex websites on GitHub, this package provides advanced features, custom plugin development, integration with third-party services, and full-scale support.</p>'
+      title: 'Website Development – Premium',
+      details: '<p>An advanced website solution for larger projects on GitHub, including custom development, third-party integrations, and ongoing support. Priced at 1000 SEK, with adjustments based on the scope and complexity.</p>'
     },
     'seo': {
-      title: 'SEO Promotion Details',
-      details: '<p>This service is coming soon. It will focus on boosting your online visibility through keyword optimization, content marketing, on-page/off-page SEO, and comprehensive performance analytics.</p>'
+      title: 'SEO Promotion (Coming Soon)',
+      details: '<p>Our upcoming SEO services will help boost your online visibility through keyword optimization, content strategy, and comprehensive analytics. Pricing will be determined based on individual requirements.</p>'
     }
   };
 
@@ -36,13 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalDetailsElem = document.querySelector('[data-modal-pricing-details]');
   const pricingOptions = document.querySelectorAll('.pricing-option[data-package-details]');
 
-  // Function to toggle the modal
+  // Function to toggle the pricing modal
   const togglePricingModal = () => {
     pricingModalContainer.classList.toggle('active');
     pricingOverlay.classList.toggle('active');
   };
 
-  // Open modal with package details
+  // When a pricing option is clicked, show its details in the modal
   pricingOptions.forEach(option => {
     option.addEventListener('click', function () {
       const packageKey = this.getAttribute('data-package-details');
@@ -55,7 +55,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close modal when clicking the close button or overlay
+  // Function to scroll to the sidebar and highlight it
+  const scrollToSidebar = () => {
+    const sidebar = document.querySelector('[data-sidebar]');
+    if (sidebar) {
+      sidebar.scrollIntoView({ behavior: 'smooth' });
+      sidebar.classList.add('highlight');
+      setTimeout(() => sidebar.classList.remove('highlight'), 3000);
+    }
+  };
+
+  // Add click event to all "Contact me" buttons (both in pricing cards and in the modal)
+  document.querySelectorAll('[data-contact-btn]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      // Prevent event from bubbling (so that clicking the button inside a pricing card doesn’t also open the modal)
+      e.stopPropagation();
+      // If the modal is open, close it first
+      if (pricingModalContainer.classList.contains('active')) {
+        togglePricingModal();
+      }
+      scrollToSidebar();
+    });
+  });
+
+  // Close the modal when clicking the close button or the overlay
   pricingModalClose.addEventListener('click', togglePricingModal);
   pricingOverlay.addEventListener('click', togglePricingModal);
 });
