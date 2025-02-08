@@ -689,7 +689,7 @@ main {
 .service-item-title {
   margin-bottom: 7px;
 }
-/* NOTE: "var(--fw-3)" is used below but not defined in :root */
+
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -702,6 +702,7 @@ main {
 --------------------------------------------------------------*/
 .testimonials {
   margin-bottom: 30px;
+  display: none;
 }
 .testimonials-title {
   margin-bottom: 20px;
@@ -745,10 +746,6 @@ main {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-/* Duplicate selector; the below resets testimonials display */
-.testimonials {
-  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -1044,7 +1041,6 @@ main {
   border-radius: 8px;
 }
 .select-item button:hover {
-  /* NOTE: Reassigning a CSS variable here seems unnecessary */
   --eerie-black-2: hsl(240, 2%, 20%);
 }
 .project-list {
