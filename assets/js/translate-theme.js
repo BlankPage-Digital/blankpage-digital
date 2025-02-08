@@ -15,12 +15,12 @@ const translations = {
     nav_resume: "Resume",
     nav_portfolio: "Portfolio",
     nav_blog: "Blog",
-    // About Me
+    // About - Me
     about_heading: "About me",
-    about_text1: "Hello, my name is <strong>Gabriel Stanciu</strong>. I am originally from Romania, but I am studying in Sweden, at Jönköping International Business School, for a Bachelor in Business Administration. My academic journey in fuels my drive to combine theory with hands-on experience. Thus, I have decided to take the next step and venture in a new project, which I have called BlankPage.",
+    about_text1: "Hello, my name is Gabriel Stanciu. I am originally from Romania, but I am studying in Sweden, at Jönköping International Business School, for a Bachelor in Business Administration. My academic journey in fuels my drive to combine theory with hands-on experience. Thus, I have decided to take the next step and venture in a new project, which I have called BlankPage.",
     about_text2: "As a Freelance IT & Marketing Consultant, I specialise in crafting marketing strategies that make a difference for my clients. Additionally, I also have experience in creating websites for all purposes, in platforms such as Shopify, Wordpress, and GitHub.",
     about_text3: "I am always aiming to gain knowledge. I am currently developing skills SEO, Python, and SQL, to broaden my skillset and expand my operations.",
-    // Services
+    // About - Services
     service_heading: "What i'm doing",
     service_item1: "IT & Marketing Consulting",
     service_text1: "Bridging business strategy with technology, I deliver expert guidance on digital transformation and marketing tactics that drive growth.",
@@ -30,11 +30,19 @@ const translations = {
     service_text3: "Crafting integrated digital campaigns and robust e-commerce solutions that enhance online presence and boost revenue.",
     service_item4: "Data-Driven Insights & SEO Optimization (Coming soon)",
     service_text4: "Leveraging analytics and SEO best practices to optimize online performance and improve customer engagement.",
+    // About - Testimonials
+    testimonial_modal_title1= "Client 1",
+    testimonial_modal_date1= "TBD",
+    testimonial_modal_text1= "STAY TUNED!",
+    testimonial_text1= "Soon!",
+    testimonial_title1= "Coming Soon",
+    testimonials= "Testimonials",
+    // About - Clients
     clients_heading: "Clients",
     // Resume
     resume_heading: "Resume",
     download_cv: "Download CV",
-    // Education
+    // Resume - Education
     education_heading: "Education",
     education_item1_title: "Jönköping International School of Business – International Management | BS in Business Administration",
     education_date1: "August 2023 — Present",
@@ -42,7 +50,7 @@ const translations = {
     education_item2_title: "“Tudor Vladimirescu” Theoretical High School – Social Science | Humanities Profile",
     education_date2: "September 2018 — June 2022",
     education_item2_text: "Completed a program in social sciences, including economics, sociology, psychology, and philosophy. Recognized for academic excellence with a Merit Scholarship awarded throughout all four years.",
-    // Experience
+    // Resume - Experience
     experience_heading: "Experience",
     experience_item1_title: "Internship Opportunities | Could your company be next on my resume?",
     experience_date1: "2025",
@@ -59,7 +67,7 @@ const translations = {
     experience_item5_title: "Ideal GSM Accesorii SRL | Picker",
     experience_date5: "August 2021 – October 2022",
     experience_item5_text: "Optimized order fulfillment by efficiently picking, packing, and preparing shipments. I also assisted with inventory management and maintained warehouse organization, ensuring accuracy and efficiency.",
-    // Skills
+    // Resume - Skills
     skills_heading: "My Skills",
     technical_skills_heading: "Technical Skills",
     soon_to_be_learnt_heading: "Soon to be Learnt",
@@ -121,12 +129,12 @@ const translations = {
     nav_resume: "CV",
     nav_portfolio: "Portfolio",
     nav_blog: "Blogg",
-    // About Me
+    // About - Me
     about_heading: "Om mig",
-    about_text1: "Hej, mitt namn är <strong>Gabriel Stanciu</strong>. Jag kommer ursprungligen från Rumänien, men studerar i Sverige, vid Jönköpings Internationella Handelshögskola, för en kandidatexamen i företagsekonomi. Min akademiska resa ger mig drivkraften att kombinera teori med praktisk erfarenhet. Därför har jag bestämt mig för att ta nästa steg och ge mig in i ett nytt projekt, som jag har kallat BlankPage.",
+    about_text1: "Hej, mitt namn är Gabriel Stanciu. Jag kommer ursprungligen från Rumänien, men studerar i Sverige, vid Jönköpings Internationella Handelshögskola, för en kandidatexamen i företagsekonomi. Min akademiska resa ger mig drivkraften att kombinera teori med praktisk erfarenhet. Därför har jag bestämt mig för att ta nästa steg och ge mig in i ett nytt projekt, som jag har kallat BlankPage.",
     about_text2: "Som frilansande IT- och marknadsföringskonsult specialiserar jag mig på att skapa marknadsstrategier som gör skillnad för mina kunder. Dessutom har jag erfarenhet av att skapa webbplatser för alla ändamål, på plattformar som Shopify, WordPress och GitHub.",
     about_text3: "Jag strävar alltid efter att skaffa mig ny kunskap. Jag håller för närvarande på att utveckla färdigheter i SEO, Python och SQL för att bredda min kompetens och utöka min verksamhet.",
-    // Services
+    // - Services
     service_heading: "Vad jag gör",
     service_item1: "IT- och marknadsföringskonsultation",
     service_text1: "Genom att förena affärsstrategi med teknik ger jag expertvägledning om digital transformation och marknadsföringstaktik som driver tillväxt.",
@@ -136,11 +144,19 @@ const translations = {
     service_text3: "Jag utformar integrerade digitala kampanjer och robusta e-handelslösningar som förbättrar onlinenärvaro och ökar intäkterna.",
     service_item4: "Data-drivna insikter & SEO-optimering (Kommer snart)",
     service_text4: "Genom att utnyttja analys och SEO-bästa praxis optimerar jag onlineprestanda och förbättrar kundengagemanget.",
+    // About - Testimonials
+    testimonial_modal_title1 = "Kund 1",
+    testimonial_modal_date1 = "Kommer snart",
+    testimonial_modal_text1 = "HÅLL UTKIK!",
+    testimonial_text1 = "Snart!",
+    testimonial_title1 = "Kommer snart",
+    testimonials = "Vittnesmål",
+    // About - Clients
     clients_heading: "Kunder",
     // Resume
     resume_heading: "CV",
     download_cv: "Ladda ner CV",
-    // Education
+    // Resume - Education
     education_heading: "Utbildning",
     education_item1_title: "Jönköpings Internationella Handelshögskola – International Management | Kandidatexamen i företagsekonomi",
     education_date1: "Augusti 2023 — Nuvarande",
@@ -148,7 +164,7 @@ const translations = {
     education_item2_title: "“Tudor Vladimirescu” Teoretiska gymnasiet – Samhällsvetenskap | Humanistisk profil",
     education_date2: "September 2018 — Juni 2022",
     education_item2_text: "Avslutade ett intensivt program inom samhällsvetenskap, inklusive ekonomi, sociologi, psykologi och filosofi. Utmärkt för akademisk framgång med ett meritstipendium under alla fyra år.",
-    // Experience
+    // Resume - Experience
     experience_heading: "Erfarenhet",
     experience_item1_title: "Praktikmöjligheter | Kan ditt företag bli nästa på mitt CV?",
     experience_date1: "2025",
@@ -165,7 +181,7 @@ const translations = {
     experience_item5_title: "Ideal GSM Accesorii SRL | Plockare",
     experience_date5: "Augusti 2021 – Oktober 2022",
     experience_item5_text: "Optimerade orderuppfyllnaden genom effektiv plockning, paketering och förberedelse av leveranser. Jag assisterade även med lagerhantering och upprätthöll en organiserad lagerstruktur för att säkerställa noggrannhet och effektivitet.",
-    // Skills
+    // Resume - Skills
     skills_heading: "Mina färdigheter",
     technical_skills_heading: "Tekniska färdigheter",
     soon_to_be_learnt_heading: "Snart att lära mig",
@@ -227,12 +243,12 @@ const translations = {
     nav_resume: "CV",
     nav_portfolio: "Portofoliu",
     nav_blog: "Blog",
-    // About Me
+    // About - Me
     about_heading: "Despre mine",
-    about_text1: "Bună! Numele meu este <strong>Gabriel Stanciu</strong>, sunt originar din România, însă acum studiez in Suedia, la Jönköping International Business School, pentru un Bachelor in Business Administration. Cariera mea academică îmi alimentează dorința de a combina teoria cu experiența practică. Din acest motiv, m decis să fac următorul pas și să mă implic într-un nou proiect, pe care l-am numit BlankPage.",
+    about_text1: "Bună! Numele meu este Gabriel Stanciu, sunt originar din România, însă acum studiez in Suedia, la Jönköping International Business School, pentru un Bachelor in Business Administration. Cariera mea academică îmi alimentează dorința de a combina teoria cu experiența practică. Din acest motiv, m decis să fac următorul pas și să mă implic într-un nou proiect, pe care l-am numit BlankPage.",
     about_text2: "Ca și Consultant independent în IT și marketing, mă specializez în dezvoltarea strategiilor de marketing care fac cu adevărat diferența pentru clienții mei. În plus, am experiență în crearea de site-uri web pentru toate nevoile, pe platforme precum WordPress, Shopify și GitHub. ",
     about_text3: "Scopul meu este să acumulez cunoștințe în mod constant. În prezent, îmi dezvolt abilități în SEO, Python și SQL, pentru a-mi lărgi setul de competențe și a-mi extinde operațiunile",
-    // Services
+    // About - Services
     service_heading: "Ce pot face pentru Compania ta",
     service_item1: "Consultanță IT & de Marketing",
     service_text1: "Îmbinând strategia de afaceri cu tehnologia, ofer îndrumare de specialitate în transformarea digitală și tactici de marketing care stimulează creșterea.",
@@ -242,11 +258,19 @@ const translations = {
     service_text3: "Elaborez campanii digitale integrate și soluții robuste de e-commerce care îmbunătățesc prezența online și cresc veniturile.",
     service_item4: "Informații bazate pe date & optimizare SEO (În curând)",
     service_text4: "Valorific analizele și cele mai bune practici SEO pentru a optimiza performanța online și a îmbunătăți implicarea clienților.",
+    // About - Testimonials
+    testimonial_modal_title1 = "Client 1",
+    testimonial_modal_date1 = "În curând",
+    testimonial_modal_text1 = "STAȚI PE FAZĂ!",
+    testimonial_text1 = "În curând!", 
+    testimonial_title1 = "În curând", 
+    testimonials = "Referințe",
+    // About - Clients
     clients_heading: "Clienți",
     // Resume
     resume_heading: "CV",
     download_cv: "Descarcă CV",
-    // Education
+    // Resume - Education
     education_heading: "Educație",
     education_item1_title: "Jönköping International School of Business – International Management | Bachelor în Administrarea Afacerilor",
     education_date1: "August 2023 — Prezent",
@@ -254,7 +278,7 @@ const translations = {
     education_item2_title: "Liceul Teoretic „Tudor Vladimirescu” – Științe Sociale | Profil umanist",
     education_date2: "Septembrie 2018 — Iunie 2022",
     education_item2_text: "Am absolvit un program în științe sociale, incluzând economie, sociologie, psihologie și filozofie. Am fost recunoscut pentru excelența academică printr-o bursă de merit acordată pe parcursul celor patru ani.",
-    // Experience
+    // Resume - Experience
     experience_heading: "Experiență",
     experience_item1_title: "Oportunități de internship | Ar putea compania dvs. să fie următoarea pe CV-ul meu?",
     experience_date1: "2025",
@@ -271,7 +295,7 @@ const translations = {
     experience_item5_title: "Ideal GSM Accesorii SRL | Picker",
     experience_date5: "August 2021 – Octombrie 2022",
     experience_item5_text: "Am optimizat procesul de pregătire a comenzilor prin selectarea, ambalarea și pregătirea expedierilor într-un mod eficient. De asemenea, am asistat la gestionarea stocurilor și am menținut organizarea depozitului, asigurând acuratețea și eficiența.",
-    // Skills
+    // Resume - Skills
     skills_heading: "Abilitățile mele",
     technical_skills_heading: "Abilități tehnice",
     soon_to_be_learnt_heading: "În curând de învățat",
