@@ -1,29 +1,28 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Fetch live exchange rates from a free API endpoint
-  fetch('https://api.exchangerate.host/latest?base=EUR')
+  // Fetch live exchange rates from exchangerate.host (free API; no API key needed)
+  fetch('https://api.exchangerate.host/latest?base=SEK')
     .then(response => response.json())
     .then(data => {
-      const rateSEK = data.rates['SEK'];
+      // Assume conversion from SEK to RON is available:
       const rateRON = data.rates['RON'];
-      
-      // Update each pricing option that has a Euro price
       document.querySelectorAll('.pricing-option').forEach(option => {
-        const priceElem = option.querySelector('.price');
-        // Skip if price is "Free" or "TBA"
-        const priceText = priceElem.textContent.trim().toLowerCase();
-        if (priceText === 'free' || priceText === 'tba') return;
+        // Only update if there is a numeric base price (free/coming soon remain unchanged)
+        const basePriceSEK = option.getAttribute('data-price-sek');
+        const basePriceRON = option.getAttribute('data-price-ron');
+        if (!basePriceSEK || basePriceSEK === "0") return;
         
-        // Extract base price number (assumes format like "€150")
-        const basePrice = parseFloat(priceElem.textContent.replace('€','').trim());
-        if (isNaN(basePrice)) return;
-        
-        const convertedSEK = Math.round(basePrice * rateSEK);
-        const convertedRON = Math.round(basePrice * rateRON);
         const convElem = option.querySelector('.price-conversions');
-        if (convElem) {
-          convElem.innerHTML = `(≈ ${convertedSEK} SEK / ${convertedRON} RON)`;
+        // Here we update the innerHTML based on the current language.
+        // For this example, assume the translator script sets a global variable currentLang.
+        // (Your translator script should update currentLang to 'ro' for Romanian, otherwise 'en' or 'sv'.)
+        if (window.currentLang && window.currentLang === 'ro') {
+          convElem.innerHTML = `(≈ ${basePriceRON} RON)`;
+          option.querySelector('.price').innerHTML = `${basePriceSEK} SEK ≈ ${basePriceRON} RON`;
+        } else {
+          convElem.innerHTML = `(≈ ${basePriceSEK} SEK)`;
+          option.querySelector('.price').innerHTML = `${basePriceSEK} SEK`;
         }
       });
     })
