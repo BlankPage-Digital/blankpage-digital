@@ -747,6 +747,22 @@ main {
   overflow: hidden;
 }
 
+.testimonials-item .content-card {
+  transition: transform 0.3s ease;
+}
+
+.testimonials-item .testimonials-item-title {
+  transition: color 0.3s ease;
+}
+
+.testimonials-item:hover .content-card {
+  transform: scale(1.05);
+}
+
+.testimonials-item:hover .testimonials-item-title {
+  color: var(--primary-color);
+}
+
 /*--------------------------------------------------------------
    Testimonials Modal
 --------------------------------------------------------------*/
@@ -1629,16 +1645,6 @@ textarea.form-input::-webkit-resizer {
     flex-grow: 1;
     width: 35px;
   }
-
-.testimonials-item:hover .content-card {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-.testimonials-item:hover .testimonials-item-title {
-  color: var(--primary-color);
-  transition: color 0.3s ease;
-}
    
   .clients-list {
     gap: 50px;
