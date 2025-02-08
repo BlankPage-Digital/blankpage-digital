@@ -1210,6 +1210,16 @@ main {
   line-height: 1.6;
 }
 
+.blog-post-item:hover .blog-banner-box img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.blog-post-item:hover .blog-item-title {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
 /*--------------------------------------------------------------
    Blog Modal Styles
 --------------------------------------------------------------*/
@@ -1541,7 +1551,6 @@ textarea.form-input::-webkit-resizer {
     gap: 20px;
   }
   .navbar-link {
-    /* Override for font-size, if needed */
     --fs-8: 14px;
   }
   .about .article-title {
@@ -1620,6 +1629,17 @@ textarea.form-input::-webkit-resizer {
     flex-grow: 1;
     width: 35px;
   }
+
+.testimonials-item:hover .content-card {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonials-item:hover .testimonials-item-title {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+   
   .clients-list {
     gap: 50px;
     margin: 0 -30px;
