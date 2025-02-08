@@ -227,74 +227,97 @@
           </section>
 
           <!-- #PRICING -->
+<!-- Pricing Section (insert in your About article) -->
 <section class="pricing" data-i18n="pricing_section">
   <h2 data-i18n="pricing_heading">Pricing Options</h2>
   <div class="pricing-table">
-    <div class="pricing-option">
+    <!-- Free Consultation (1h) -->
+    <div class="pricing-option" data-package-details="free" data-price-sek="0" data-price-ron="0">
       <h3 data-i18n="pricing_free_title">Free Consultation</h3>
       <p data-i18n="pricing_free_desc">
-        Enjoy a free 1-hour consultation to assess your situation and receive expert suggestions.
+        Enjoy a free 1-hour consultation to assess your current digital presence and receive initial suggestions.
       </p>
-      <div class="price" data-i18n="free_price">
+      <div class="price">
         Free
       </div>
+      <button class="contact-btn" data-contact-btn data-i18n="contact_me">Contact me</button>
     </div>
-    <div class="pricing-option">
-      <h3 data-i18n="product1_title">Strategy & IT Operations</h3>
-      <p data-i18n="product1_text">
-        Professional consulting to help you set up and operate your online platforms.
+
+    <!-- Strategy & IT Operations (Per Hour) -->
+    <div class="pricing-option" data-package-details="strategy" data-price-sek="200" data-price-ron="90">
+      <h3 data-i18n="pricing_strategy_title">Strategy &amp; IT Operations <span>(per hour)</span></h3>
+      <p data-i18n="pricing_strategy_desc">
+        Professional consulting to plan your digital strategy and streamline IT operations.
+        <br><em>Note: Price may vary based on complexity.</em>
       </p>
       <div class="price">
-        €150
-        <span class="price-conversions">(≈ <span class="converted-sek">--</span> SEK / <span class="converted-ron">--</span> RON)</span>
+        200 SEK/h
+        <span class="price-conversions">(≈ <span class="converted-ron">90 RON/h</span>)</span>
       </div>
+      <button class="contact-btn" data-contact-btn data-i18n="contact_me">Contact me</button>
     </div>
-    <div class="pricing-option">
-      <h3 data-i18n="product2_title">Website Development – Small</h3>
-      <p data-i18n="product2_text">
-        A basic, static website hosted on GitHub – ideal for a simple online presence.
+
+    <!-- Website Development – Small (Static on GitHub) -->
+    <div class="pricing-option" data-package-details="website-small" data-price-sek="100" data-price-ron="45">
+      <h3 data-i18n="pricing_website_small_title">Website Development – Small</h3>
+      <p data-i18n="pricing_website_small_desc">
+        A basic, static website hosted on GitHub, perfect for a simple online presence.
+        <br><em>Note: Price may differ based on project complexity.</em>
       </p>
       <div class="price">
-        €10
-        <span class="price-conversions">(≈ <span class="converted-sek">--</span> SEK / <span class="converted-ron">--</span> RON)</span>
+        100 SEK
+        <span class="price-conversions">(≈ <span class="converted-ron">45 RON</span>)</span>
       </div>
+      <button class="contact-btn" data-contact-btn data-i18n="contact_me">Contact me</button>
     </div>
-    <div class="pricing-option">
-      <h3 data-i18n="product3_title">Website Development – Standard</h3>
-      <p data-i18n="product3_text">
-        A dynamic website using WordPress or Shopify with additional features.
+
+    <!-- Website Development – Standard (WordPress/Shopify) -->
+    <div class="pricing-option" data-package-details="website-standard" data-price-sek="500" data-price-ron="225">
+      <h3 data-i18n="pricing_website_standard_title">Website Development – Standard</h3>
+      <p data-i18n="pricing_website_standard_desc">
+        A dynamic website using WordPress or Shopify with interactive features.
+        <br><em>Note: Price may differ based on project complexity.</em>
       </p>
       <div class="price">
-        €50
-        <span class="price-conversions">(≈ <span class="converted-sek">--</span> SEK / <span class="converted-ron">--</span> RON)</span>
+        500 SEK
+        <span class="price-conversions">(≈ <span class="converted-ron">225 RON</span>)</span>
       </div>
+      <button class="contact-btn" data-contact-btn data-i18n="contact_me">Contact me</button>
     </div>
-    <div class="pricing-option">
-      <h3 data-i18n="product4_title">Website Development – Premium</h3>
-      <p data-i18n="product4_text">
-        For larger, more complex websites on GitHub with advanced functionalities.
+
+    <!-- Website Development – Premium (Advanced GitHub Projects) -->
+    <div class="pricing-option" data-package-details="website-premium" data-price-sek="1000" data-price-ron="450">
+      <h3 data-i18n="pricing_website_premium_title">Website Development – Premium</h3>
+      <p data-i18n="pricing_website_premium_desc">
+        For larger and more complex websites on GitHub with advanced functionality.
+        <br><em>Note: Price may differ based on project complexity.</em>
       </p>
       <div class="price">
-        €100
-        <span class="price-conversions">(≈ <span class="converted-sek">--</span> SEK / <span class="converted-ron">--</span> RON)</span>
+        1000 SEK
+        <span class="price-conversions">(≈ <span class="converted-ron">450 RON</span>)</span>
       </div>
+      <button class="contact-btn" data-contact-btn data-i18n="contact_me">Contact me</button>
     </div>
-    <div class="pricing-option coming-soon">
-      <h3 data-i18n="poduct5_title">SEO Promotion <span data-i18n="product_coming_soon">(Coming Soon)</span></h3>
-      <p data-i18n="poduct5_text">
-        Boost your online visibility with our upcoming SEO promotion services.
+
+    <!-- SEO Promotion (Coming Soon) -->
+    <div class="pricing-option coming-soon" data-package-details="seo">
+      <h3 data-i18n="pricing_seo_title">SEO Promotion <span data-i18n="coming_soon">(Coming Soon)</span></h3>
+      <p data-i18n="pricing_seo_desc">
+        Enhance your online visibility with our upcoming SEO promotion services.
       </p>
       <div class="price">
         TBA
       </div>
+      <button class="contact-btn" data-contact-btn data-i18n="contact_me">Contact me</button>
     </div>
   </div>
   <p class="pricing-note" data-i18n="pricing_note">
-    * Prices are based on Euro as a base currency. If you come from a referral, you receive 10% off. Prices update automatically with live exchange rates.
+    * Prices are quoted in Swedish kronor (SEK) for English/Swedish; for Romanian, prices are shown in RON.
+    Referral discount of 10% applies. Prices are indicative and may vary with complexity.
   </p>
 </section>
 
-          <!-- #PRICING MODAL-->
+<!-- Pricing Modal (Place at the end of <main> or just before </body>) -->
 <div class="modal-container pricing-modal-container" data-pricing-modal-container>
   <div class="overlay" data-pricing-overlay></div>
   <section class="pricing-modal" data-pricing-modal>
@@ -304,8 +327,9 @@
     <div class="modal-content">
       <h3 class="modal-title" data-modal-pricing-title>Package Details</h3>
       <div class="modal-details" data-modal-pricing-details>
-        Details
+        <!-- Detailed description will be injected here dynamically -->
       </div>
+      <button class="contact-btn" data-contact-btn data-i18n="contact_me">Contact me</button>
     </div>
   </section>
 </div>
