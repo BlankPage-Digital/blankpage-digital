@@ -31,12 +31,12 @@ const translations = {
     service_item4: "Data-Driven Insights & SEO Optimization (Coming soon)",
     service_text4: "Leveraging analytics and SEO best practices to optimize online performance and improve customer engagement.",
     // About - Testimonials
-    testimonial_modal_title1= "Client 1",
-    testimonial_modal_date1= "TBD",
-    testimonial_modal_text1= "STAY TUNED!",
-    testimonial_text1= "Soon!",
-    testimonial_title1= "Coming Soon",
-    testimonials= "Testimonials",
+    testimonial_modal_title1: "Client 1",
+    testimonial_modal_date1: "TBD",
+    testimonial_modal_text1: "STAY TUNED!",
+    testimonial_text1: "Soon!",
+    testimonial_title1: "Coming Soon",
+    testimonials: "Testimonials",
     // About - Clients
     clients_heading: "Clients",
     // Resume
@@ -145,12 +145,12 @@ const translations = {
     service_item4: "Data-drivna insikter & SEO-optimering (Kommer snart)",
     service_text4: "Genom att utnyttja analys och SEO-bästa praxis optimerar jag onlineprestanda och förbättrar kundengagemanget.",
     // About - Testimonials
-    testimonial_modal_title1 = "Kund 1",
-    testimonial_modal_date1 = "Kommer snart",
-    testimonial_modal_text1 = "HÅLL UTKIK!",
-    testimonial_text1 = "Snart!",
-    testimonial_title1 = "Kommer snart",
-    testimonials = "Vittnesmål",
+    testimonial_modal_title1: "Kund 1",
+    testimonial_modal_date1: "Kommer snart",
+    testimonial_modal_text1: "HÅLL UTKIK!",
+    testimonial_text1: "Snart!",
+    testimonial_title1: "Kommer snart",
+    testimonials: "Vittnesmål",
     // About - Clients
     clients_heading: "Kunder",
     // Resume
@@ -259,12 +259,12 @@ const translations = {
     service_item4: "Informații bazate pe date & optimizare SEO (În curând)",
     service_text4: "Valorific analizele și cele mai bune practici SEO pentru a optimiza performanța online și a îmbunătăți implicarea clienților.",
     // About - Testimonials
-    testimonial_modal_title1 = "Client 1",
-    testimonial_modal_date1 = "În curând",
-    testimonial_modal_text1 = "STAȚI PE FAZĂ!",
-    testimonial_text1 = "În curând!", 
-    testimonial_title1 = "În curând", 
-    testimonials = "Referințe",
+    testimonial_modal_title1: "Client 1",
+    testimonial_modal_date1: "În curând",
+    testimonial_modal_text1: "STAȚI PE FAZĂ!",
+    testimonial_text1: "În curând!", 
+    testimonial_title1: "În curând", 
+    testimonials: "Referințe",
     // About - Clients
     clients_heading: "Clienți",
     // Resume
