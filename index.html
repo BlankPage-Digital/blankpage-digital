@@ -732,43 +732,54 @@
           </section>
         </article>
         
-        <!-- #BLOG -->
-        <article class="blog" data-page="nav_blog">
-          <header>
-            <h2 class="h2 article-title" data-i18n="blog_heading">
-              Blog
-            </h2>
-          </header>
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img src="./assets/images/project_coming_soon.png" alt="Coming Soon" loading="lazy">
-                  </figure>
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">
-                        Venture
-                      </p>
-                      <span class="dot">
-                      </span>
-                      <time datetime="2022-02-23" data-i18n="blog_date1">
-                        TBD
-                      </time>
-                    </div>
-                    <h3 class="h3 blog-item-title" data-i18n="blog_post_title">
-                      New blog post coming soon!
-                    </h3>
-                    <p class="blog-text" data-i18n="blog_post_title1">
-                      Stay tuned!
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
+<!-- BLOG SECTION -->
+<article class="blog" data-page="nav_blog">
+  <header>
+    <h2 class="h2 article-title" data-i18n="blog_heading">Blog</h2>
+  </header>
+  <section class="blog-posts">
+    <ul class="blog-posts-list">
+      <li class="blog-post-item" data-blog-item data-i18n="blog_post_item">
+        <div class="blog-preview" data-blog-preview>
+          <figure class="blog-banner-box">
+            <img src="./assets/images/project_coming_soon.png" alt="Coming Soon" loading="lazy" data-blog-cover>
+          </figure>
+          <div class="blog-content">
+            <h3 class="h3 blog-item-title" data-blog-title data-i18n="blog_post_title1">
+              New blog post coming soon!
+            </h3>
+            <p class="blog-text" data-blog-preview-text data-i18n="blog_post_preview1">
+              Stay tuned!
+            </p>
+          </div>
+          <!-- (Optional) Extra images can be added here with data-extra-image if needed -->
+          <!-- <img src=\"./assets/images/extra_image1.jpg\" alt=\"Extra image\" data-extra-image> --> 
+        </div>
+      </li>
+    </ul>
+  </section>
+</article>
+
+<!-- #BLOG MODAL -->
+<div class="modal-container" data-blog-modal-container>
+  <div class="overlay" data-blog-overlay></div>
+  <section class="blog-modal" data-blog-modal>
+    <button class="modal-close-btn" data-blog-modal-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <div class="modal-content">
+      <figure class="modal-banner-box">
+        <img src="assets/images/REPLACE HERE IMAGE SOURCE" alt="" data-modal-blog-cover>
+      </figure>
+      <h3 class="h3 modal-title" data-modal-blog-title data-i18n="blog_modal_title1"></h3>
+      <time datetime="" data-modal-blog-date data-i18n="blog_modal_date1"></time>
+      <div class="modal-text" data-modal-blog-text data-i18n="blog_modal_text1"></div>
+      <!-- Container for any extra images that might be part of the blog post -->
+      <div class="modal-extra-images" data-modal-blog-extra-images></div>
+    </div>
+  </section>
+</div>
+
       </div>
     </main>
     
@@ -776,6 +787,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/particles.js"></script>
     <script src="assets/js/translate-theme.js"></script>
+    <script src="./assets/js/blog-modal.js"></script>
 
     <!-- #ION LINKSCRIPTS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
