@@ -1055,6 +1055,13 @@ main {
   margin-bottom: 15px;
 }
 
+/* Pricing Modal button */
+[data-sidebar].highlight {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
+  transition: box-shadow 0.3s ease;
+}
+
 /*--------------------------------------------------------------
    Clients Section
 --------------------------------------------------------------*/
