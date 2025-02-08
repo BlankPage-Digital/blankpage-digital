@@ -321,8 +321,6 @@ const translations = {
   }
 };
 
-};
-
 // Theme settings: define the primary and background colours for each language.
 const themes = {
   en: { primary: "#5928B1", background: "#3D2B42" },
