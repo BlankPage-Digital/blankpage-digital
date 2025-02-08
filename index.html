@@ -225,36 +225,11 @@
               </li>
             </ul>
           </section>
-          
-          <!-- #TESTIMONIALS -->
-          <section class="testimonials">
-            <h3 class="h3 testimonials-title" data-i18n="testimonials">
-              Testimonials
-            </h3>
-            <ul class="testimonials-list has-scrollbar">
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img src="./assets/images/clubdaimond_logo.png" alt="Client1" width="60" data-testimonials-avatar>
-                  </figure>
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title data-i18n="testimonial_title1">
-                    Coming Soon
-                  </h4>
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p data-i18n="testimonial_text1">
-                      Soon!
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          
+
           <!-- #PRICING -->
-          <section class="pricing" data-i18n="pricing_section">
+<section class="pricing" data-i18n="pricing_section">
   <h2 data-i18n="pricing_heading">Pricing Options</h2>
   <div class="pricing-table">
-    <!-- Free Consultation -->
     <div class="pricing-option">
       <h3 data-i18n="pricing_free_title">Free Consultation</h3>
       <p data-i18n="pricing_free_desc">
@@ -284,8 +259,6 @@
         <span class="price-conversions">(≈ <span class="converted-sek">--</span> SEK / <span class="converted-ron">--</span> RON)</span>
       </div>
     </div>
-
-    <!-- Website Development – Standard (WordPress/Shopify) -->
     <div class="pricing-option">
       <h3 data-i18n="product3_title">Website Development – Standard</h3>
       <p data-i18n="product3_text">
@@ -296,8 +269,6 @@
         <span class="price-conversions">(≈ <span class="converted-sek">--</span> SEK / <span class="converted-ron">--</span> RON)</span>
       </div>
     </div>
-
-    <!-- Website Development – Premium (Advanced GitHub projects) -->
     <div class="pricing-option">
       <h3 data-i18n="product4_title">Website Development – Premium</h3>
       <p data-i18n="product4_text">
@@ -323,6 +294,46 @@
   </p>
 </section>
 
+          <!-- #PRICING MODAL-->
+<div class="modal-container pricing-modal-container" data-pricing-modal-container>
+  <div class="overlay" data-pricing-overlay></div>
+  <section class="pricing-modal" data-pricing-modal>
+    <button class="modal-close-btn" data-pricing-modal-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <div class="modal-content">
+      <h3 class="modal-title" data-modal-pricing-title>Package Details</h3>
+      <div class="modal-details" data-modal-pricing-details>
+        <!-- Detailed description will be injected here dynamically -->
+      </div>
+    </div>
+  </section>
+</div>
+
+          <!-- #TESTIMONIALS -->
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title" data-i18n="testimonials">
+              Testimonials
+            </h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/clubdaimond_logo.png" alt="Client1" width="60" data-testimonials-avatar>
+                  </figure>
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title data-i18n="testimonial_title1">
+                    Coming Soon
+                  </h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p data-i18n="testimonial_text1">
+                      Soon!
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          
           <!-- #TESTIMONIALS MODAL -->
           <div class="modal-container" data-modal-container>
             <div class="overlay" data-overlay>
@@ -858,6 +869,7 @@
     <script src="./assets/js/particles.js"></script>
     <script src="assets/js/translate-theme.js"></script>
     <script src="./assets/js/blog-modal.js"></script>
+    <script src="./assets/js/pricing.js"></script>
 
     <!-- #ION LINKSCRIPTS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
