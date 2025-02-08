@@ -1,5 +1,3 @@
-// Translation data (copy the translations object from above)
-const translations = {
 const translations = {
   en: {
     // Sidebar
