@@ -872,6 +872,82 @@ main {
 }
 
 /*--------------------------------------------------------------
+   Pricing Section
+--------------------------------------------------------------*/
+.pricing {
+  padding: 20px;
+  background-color: var(--eerie-black-2);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.pricing h2 {
+  color: var(--white-2);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pricing-option {
+  background: var(--border-gradient-onyx);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-2);
+  flex: 1 1 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.pricing-option:hover {
+  transform: scale(1.05);
+}
+
+.pricing-option h3 {
+  color: var(--white-2);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.pricing-option:hover h3 {
+  color: var(--primary-color);
+}
+
+.pricing-option p {
+  color: var(--light-gray);
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white-1);
+}
+
+.price-conversions {
+  font-size: 14px;
+  color: var(--light-gray-70);
+}
+
+.pricing-note {
+  text-align: center;
+  font-size: 12px;
+  color: var(--light-gray-70);
+  margin-top: 15px;
+}
+
+.coming-soon {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/*--------------------------------------------------------------
    Clients Section
 --------------------------------------------------------------*/
 .clients {
