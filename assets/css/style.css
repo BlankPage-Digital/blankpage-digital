@@ -345,6 +345,7 @@ main {
   height: 100%;
   object-fit: cover;
 }
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -364,7 +365,8 @@ main {
   inset: 1px;
   border-radius: inherit;
   background: var(--bg-gradient-jet);
-  transition: opacity 0.3s ease;
+  transition: var(--transition-1);
+  opacity: 0.3s ease;
   z-index: -1;
 }
 .info_more-btn:hover,
@@ -379,6 +381,7 @@ main {
 .info_more-btn span {
   display: none;
 }
+
 .sidebar-info_more {
   max-height: none;
   overflow: visible;
