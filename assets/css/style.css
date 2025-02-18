@@ -901,8 +901,8 @@ main {
   position: relative;
   overflow: hidden;
   background: var(--border-gradient-onyx);
-  padding: 20px;
-  border-radius: 15px;
+  padding: 21px;
+  border-radius: 10px;
   box-shadow: var(--shadow-2);
   flex: 1 1 280px;
   text-align: center;
@@ -913,11 +913,16 @@ main {
 .pricing-option::before {
   content: "";
   position: absolute;
-  inset: 1px;
+  inset: 2px;
   background: var(--bg-gradient-jet);
   border-radius: inherit;
-  z-index: -1;
+  z-index: 0;
   opacity: 1;
+}
+
+.pricing-option:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-3);
 }
 
 .pricing-option h3 {
