@@ -908,16 +908,15 @@ main {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  z-index: 1;
 }
 
 .pricing-option::before {
   content: "";
   position: absolute;
-  inset: 1px;
+  inset: 0px;
   background: var(--bg-gradient-jet);
   border-radius: inherit;
-  z-index: 0;
+  z-index: -1;
   opacity: 1;
 }
 
