@@ -576,7 +576,6 @@ main {
   overflow: hidden; 
   z-index: 0;
 }
-
 .skill-card::before {
   content: "";
   position: absolute;
@@ -585,9 +584,16 @@ main {
   border-radius: inherit;
   z-index: -1;
 }
-
 .skill-card:hover {
   transform: scale(1.05);
+}
+.skill-card h3 {
+  color: var(--white-2);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+.skill-card:hover h3 {
+  color: var(--primary-color);
 }
 .skill-card img.skill-icon {
   width: 40px;
@@ -599,6 +605,8 @@ main {
   font-size: var(--fs-4);
   display: block;
 }
+
+
 
 /*--------------------------------------------------------------
    Certificates Section
@@ -628,7 +636,6 @@ main {
   overflow: hidden;
   z-index: 0;
 }
-
 .certificate-card::before {
   content: "";
   position: absolute;
@@ -637,9 +644,16 @@ main {
   border-radius: inherit;
   z-index: -1;
 }
-
 .certificate-card:hover {
   transform: scale(1.05);
+}
+.certificate-card h3 {
+  color: var(--white-2);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+.certificate-card:hover h3 {
+  color: var(--primary-color);
 }
 .certificate-card a {
   color: var(--white-2);
