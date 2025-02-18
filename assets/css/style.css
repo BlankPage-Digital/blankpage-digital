@@ -717,16 +717,15 @@ main {
   border-radius: inherit;
   z-index: -1;
 }
-.service-item:hover {
+.skill-card:hover {
   transform: scale(1.05);
-  box-shadow: var(--shadow-3);
 }
-.service-item h4 {
+.skill-card h4 {
   color: var(--white-2);
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
-.service-item:hover h4 {
+.skill-card:hover h4 {
   color: var(--primary-color);
 }
 .service-icon-box {
