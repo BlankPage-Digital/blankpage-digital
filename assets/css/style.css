@@ -189,11 +189,6 @@ body:not([class*="lang-"]) {
   --primary-color: #5928B1;
   --background-lang-color: #3D2B42;
   --text-gradient-lang: linear-gradient(to right, #5928B1, #7a52cc);
-  --bg-gradient-secondary-1: linear-gradient(
-    to bottom right,
-    #5928B1 0%,
-    rgba(89, 40, 177, 0) 50%
-  );
 }
 
 /*--------------------------------------------------------------
