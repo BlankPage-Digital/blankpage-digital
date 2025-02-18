@@ -908,7 +908,6 @@ main {
   cursor: pointer;
   overflow: hidden;
 }
-
 .pricing-option::before {
   content: "";
   position: absolute;
