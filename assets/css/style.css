@@ -587,14 +587,6 @@ main {
 .skill-card:hover {
   transform: scale(1.05);
 }
-.skill-card span {
-  color: var(--white-2);
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-}
-.skill-card:hover span {
-  color: var(--primary-color);
-}
 .skill-card img.skill-icon {
   width: 40px;
   height: 40px;
@@ -707,6 +699,7 @@ main {
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
+  transition: transform 0.3s ease;
   z-index: 1;
 }
 .service-item::before {
@@ -716,6 +709,9 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+}
+.skill-card:hover {
+  transform: scale(1.05);
 }
 .service-icon-box {
   margin-bottom: 10px;
