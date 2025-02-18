@@ -978,16 +978,30 @@ main {
 .contact-btn {
   margin-top: 10px;
   padding: 8px 15px;
-  background: var(--primary-color);
   border: none;
   border-radius: 4px;
   color: var(--white-1);
   font-size: 14px;
   cursor: pointer;
-  transition: background 0.3s ease 0.3s;
+  background: var(--primary-color);
+  background-image: var(--text-gradient-lang);
+  background-size: 100%;
+  background-position: 0 0;
+  transition: opacity 0.3s ease;
+  position: relative;
 }
-.contact-btn:hover {
-  background: var(--text-gradient-lang);
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--primary-color);
+  transition: opacity 0.3s ease;
+}
+.contact-btn:hover::before {
+  opacity: 0;
 }
 .pricing-note {
   text-align: center;
