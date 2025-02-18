@@ -989,7 +989,7 @@ main {
   background-position: 0 0;
   transition: opacity 0.3s ease;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 .contact-btn::before {
   content: '';
