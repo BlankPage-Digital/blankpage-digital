@@ -156,24 +156,44 @@ body.lang-en {
   --primary-color: #5928B1;
   --background-lang-color: #3D2B42;
   --text-gradient-lang: linear-gradient(to right, #5928B1, #7a52cc);
+  --bg-gradient-secondary-1: linear-gradient(
+    to bottom right,
+    #5928B1 0%,
+    rgba(89, 40, 177, 0) 50%
+  );
 }
 
 body.lang-sv {
   --primary-color: #006AA7;
   --background-lang-color: #1B263B;
   --text-gradient-lang: linear-gradient(to right, #006AA7, #3A7CA5);
+  --bg-gradient-secondary-1: linear-gradient(
+    to bottom right,
+    #006AA7 0%,
+    rgba(89, 40, 177, 0) 50%
+  );
 }
 
 body.lang-ro {
   --primary-color: #F77F00;
   --background-lang-color: #2B2118;
   --text-gradient-lang: linear-gradient(to right, #F77F00, #D62828);
+  --bg-gradient-secondary-1: linear-gradient(
+    to bottom right,
+    #F77F00 0%,
+    rgba(89, 40, 177, 0) 50%
+  );
 }
 
 body:not([class*="lang-"]) {
   --primary-color: #5928B1;
   --background-lang-color: #3D2B42;
   --text-gradient-lang: linear-gradient(to right, #5928B1, #7a52cc);
+  --bg-gradient-secondary-1: linear-gradient(
+    to bottom right,
+    #5928B1 0%,
+    rgba(89, 40, 177, 0) 50%
+  );
 }
 
 /*--------------------------------------------------------------
