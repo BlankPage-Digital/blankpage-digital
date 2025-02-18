@@ -909,6 +909,15 @@ main {
   overflow: hidden;
 }
 
+.pricing-option::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
 .pricing-option:hover {
   transform: scale(1.05);
 }
