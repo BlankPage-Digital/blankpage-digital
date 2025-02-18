@@ -908,6 +908,7 @@ main {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  z-index: 1;
 }
 
 .pricing-option::before {
