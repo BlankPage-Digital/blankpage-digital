@@ -368,7 +368,7 @@ main {
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--white-1);
-  background: var(--bg-gradient-secondary-2);
+  background: var(--primary-color);
   padding: 10px;
   box-shadow: var(--shadow-2);
   z-index: 1;
@@ -379,7 +379,7 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--bg-gradient-onyx);
+  background: var(--bg-gradient-jet);
   z-index: -1;
 }
 
