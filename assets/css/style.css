@@ -989,6 +989,7 @@ main {
   background-position: 0 0;
   transition: opacity 0.3s ease;
   position: relative;
+  z-index: 1;
 }
 .contact-btn::before {
   content: '';
@@ -999,6 +1000,7 @@ main {
   left: 0;
   background: var(--primary-color);
   transition: opacity 0.3s ease;
+  z-index: -1
 }
 .contact-btn:hover::before {
   opacity: 0;
