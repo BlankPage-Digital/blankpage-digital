@@ -1001,6 +1001,7 @@ main {
   background: var(--primary-color);
   transition: opacity 0.3s ease;
   z-index: -1
+  border-radius: 4px;
 }
 .contact-btn:hover::before {
   opacity: 0;
