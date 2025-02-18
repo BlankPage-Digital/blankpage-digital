@@ -371,18 +371,8 @@ main {
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
+  transition: background 0.3s ease;
   z-index: 1;
-  position: relative;
-  background-size: 100%;
-  background-image: linear-gradient(
-    to right,
-    var(--border-gradient-onyx),
-    var(--border-gradient-onyx)
-  ), var(--bg-gradient-secondary-2);
-  background-position: 100% 0, 0 0;
-  background-repeat: no-repeat;
-  transition: background-position 0.3s ease;
 }
 
 .info_more-btn::before {
@@ -391,26 +381,18 @@ main {
   inset: 1px;
   border-radius: inherit;
   background: var(--bg-gradient-jet);
-  background-image: linear-gradient(
-    to right,
-    var(--bg-gradient-jet),
-    var(--bg-gradient-jet)
-  ), var(--text-gradient-lang);
-  background-position: 100% 0, 0 0;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  transition: background-position 0.3s ease;
+  transition: background 0.3s ease;
   z-index: -1;
 }
 
 .info_more-btn:hover,
 .info_more-btn:focus {
-  background-position: 0 0, 0 0;
+  background: var(--bg-gradient-secondary-2);
 }
 
 .info_more-btn:hover::before,
 .info_more-btn:focus::before {
-  background-position: 0 0, 0 0;
+  background: var(--text-gradient-lang);
 }
 
 .info_more-btn span {
