@@ -710,7 +710,7 @@ main {
   border-radius: inherit;
   z-index: -1;
 }
-.skill-card:hover {
+.service-item:hover {
   transform: scale(1.05);
 }
 .service-icon-box {
