@@ -903,7 +903,7 @@ main {
   background: var(--border-gradient-onyx);
   padding: 20px;
   border-radius: 14px;
-  box-shadow: var(--shadow-3);
+  box-shadow: var(--shadow-2);
   flex: 1 1 280px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -917,10 +917,12 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  opacity: 1;
 }
 
 .pricing-option:hover {
   transform: scale(1.05);
+  box-shadow: var(--shadow-3);
 }
 
 
