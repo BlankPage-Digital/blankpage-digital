@@ -983,27 +983,24 @@ main {
   color: var(--white-1);
   font-size: 14px;
   cursor: pointer;
-  background: var(--primary-color);
-  background-image: var(--text-gradient-lang);
-  background-size: 100%;
-  background-position: 0 0;
-  transition: opacity 0.3s ease;
   position: relative;
-  z-index: 0;
+  background: var(--text-gradient-lang);
 }
-.contact-btn::before {
-  content: '';
+
+.contact-btn::after {
+  content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
+  border-radius: 4px;
   background: var(--primary-color);
   transition: opacity 0.3s ease;
-  z-index: -1
-  border-radius: 4px;
 }
-.contact-btn:hover::before {
+
+.contact-btn span {
+  position: relative;
+  z-index: 1;
+}
+.contact-btn:hover::after {
   opacity: 0;
 }
 .pricing-note {
