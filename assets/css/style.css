@@ -367,10 +367,11 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--white-1);
-  background: var(--bg-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
   z-index: 1;
 }
 
@@ -379,31 +380,20 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--text-gradient-lang);
+  background: var(--bg-gradient-jet);
+  transition: var(--transition-1);
   z-index: -1;
 }
 
-.info_more-btn::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 0 15px;
-  background: var(--bg-gradient-jet);
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
+.info_more-btn:hover,
+.info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
 
-.info_more-btn span {
-  display: none;
-}
+.info_more-btn:hover::before,
+.info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
 
-.info_more-btn:hover::after {
-  opacity: 0;
-}
+.info_more-btn span { display: none; }
 
 .sidebar-info_more {
-  max-height: none;
-  overflow: visible;
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-2);
@@ -412,7 +402,6 @@ main {
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
-  max-height: 1000px;
 }
 
 /* Contacts */
