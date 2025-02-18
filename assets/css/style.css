@@ -902,29 +902,23 @@ main {
   overflow: hidden;
   background: var(--border-gradient-onyx);
   padding: 20px;
-  border-radius: 14px;
+  border-radius: 15px;
   box-shadow: var(--shadow-2);
   flex: 1 1 280px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
 .pricing-option::before {
   content: "";
   position: absolute;
-  inset: 0px;
+  inset: 1px;
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
   opacity: 1;
 }
-
-.pricing-option:hover {
-  transform: scale(1.05);
-  box-shadow: var(--shadow-3);
-}
-
 
 .pricing-option h3 {
   color: var(--white-2);
