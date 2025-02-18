@@ -587,12 +587,12 @@ main {
 .skill-card:hover {
   transform: scale(1.05);
 }
-.skill-card h3 {
+.skill-card span {
   color: var(--white-2);
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
-.skill-card:hover h3 {
+.skill-card:hover span {
   color: var(--primary-color);
 }
 .skill-card img.skill-icon {
@@ -647,12 +647,12 @@ main {
 .certificate-card:hover {
   transform: scale(1.05);
 }
-.certificate-card h3 {
+.certificate-card span {
   color: var(--white-2);
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
-.certificate-card:hover h3 {
+.certificate-card:hover span {
   color: var(--primary-color);
 }
 .certificate-card a {
