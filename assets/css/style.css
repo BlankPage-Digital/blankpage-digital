@@ -368,7 +368,7 @@ main {
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--white-1);
-  background: var(--bg-gradient-secondary-2);  /* Set the hover gradient as base */
+  background: var(--bg-gradient-secondary-2);
   padding: 10px;
   box-shadow: var(--shadow-2);
   z-index: 1;
@@ -379,7 +379,7 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--text-gradient-lang);  /* Set the hover gradient as base */
+  background: var(--bg-gradient-onyx);
   z-index: -1;
 }
 
