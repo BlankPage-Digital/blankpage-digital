@@ -1076,6 +1076,8 @@ main {
   z-index: 30;
   max-width: 500px;
   width: 90%;
+  max-height: 90vh;
+  overflow-y: auto
 }
 [data-pricing-modal-container].active [data-pricing-modal] {
   transform: scale(1);
