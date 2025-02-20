@@ -1725,8 +1725,8 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 10px;
   }
   .info_more-btn {
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
   }
 }
 
@@ -2037,7 +2037,7 @@ textarea.form-input::-webkit-resizer {
     margin: auto;
   }
   .navbar {
-    position: absolute;
+    position: relative;
     bottom: auto;
     top: 0;
     left: auto;
@@ -2197,9 +2197,9 @@ textarea.form-input::-webkit-resizer {
    Particle Background
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--primary-color);
@@ -2207,7 +2207,7 @@ textarea.form-input::-webkit-resizer {
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
-  z-index: 1000;
+  z-index: 1;
   opacity: 0;
   visibility: hidden;
 }
@@ -2227,7 +2227,7 @@ textarea.form-input::-webkit-resizer {
 }
 .back-to-top:hover::before,
 .back-to-top:focus::before { 
-  background: var(--bg-gradient-secondary-2);
+  background: var(--text-gradient-lang);
 }
 .back-to-top.show {
   opacity: 1;
