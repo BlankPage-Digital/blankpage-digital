@@ -1725,8 +1725,8 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 10px;
   }
   .info_more-btn {
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
   }
 }
 
@@ -2037,7 +2037,7 @@ textarea.form-input::-webkit-resizer {
     margin: auto;
   }
   .navbar {
-    position: relative;
+    position: absolute;
     bottom: auto;
     top: 0;
     left: auto;
@@ -2194,43 +2194,38 @@ textarea.form-input::-webkit-resizer {
 }
 
 /*--------------------------------------------------------------
-   Particle Background
+   Back to Top Button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  border-radius: 0 15px;
-  font-size: 13px;
-  color: var(--primary-color);
-  background: var(--border-gradient-onyx);
-  padding: 10px;
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
-  z-index: 1;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--white-2);
+  font-size: 20px;
+  cursor: pointer;
   opacity: 0;
   visibility: hidden;
-}
-.back-to-top::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: inherit;
-  background: var(--bg-gradient-jet);
-  transition: var(--transition-1);
-  z-index: -1;
-}
-.back-to-top:hover,
-.back-to-top:focus { 
-  background: var(--text-gradient-lang);
-  color: var(--white-2);
-}
-.back-to-top:hover::before,
-.back-to-top:focus::before { 
-  background: var(--text-gradient-lang);
+  transition: opacity 0.3s ease;
+  z-index: 1000;
 }
 .back-to-top.show {
   opacity: 1;
   visibility: visible;
 }
-
+.back-to-top:hover,
+.back-to-top:focus {
+  background-color: var(--text-gradient-lang);
+}
+@media (max-width: 767px) {
+  .back-to-top {
+    bottom: auto;
+    top: 5px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
