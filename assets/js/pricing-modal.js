@@ -5,6 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const modalDetails = document.querySelector('[data-modal-pricing-details]');
   const modalCloseBtn = document.querySelector('[data-pricing-modal-close]');
   const overlay = document.querySelector('[data-pricing-overlay]');
+  const modalTitle = document.querySelector('[data-modal-pricing-title]');
+  const contactBtn = document.querySelector('[data-contact-btn]');
+
+  // Mapping for modal titles based on package type
+  const modalTitles = {
+    free: "FREE CONSULTATION",
+    strategy: "IT SUPPORT AND CONSULTING",
+    "website-small": "MARKETING SERVICES",
+    "website-standard": "WEBSITE DEVELOPMENT"
+  };
 
   // Define modal content for each package using translation keys via data-i18n
   const modalContent = {
@@ -113,11 +123,18 @@ document.addEventListener('DOMContentLoaded', function() {
     `
   };
 
+  // Attach click events on pricing options.
   pricingOptions.forEach(option => {
     option.addEventListener('click', function() {
       const packageType = option.getAttribute('data-package-details');
-      modalDetails.innerHTML = modalContent[packageType] || '<p data-i18n="modal_no_details">No details available.</p>';
+      modalDetails.innerHTML = modalContent[packageType] || '<div data-i18n="modal_no_details">No details available.</div>';
       
+      // Update modal title dynamically based on package type.
+      if (modalTitles[packageType]) {
+        modalTitle.textContent = modalTitles[packageType];
+      }
+      
+      // Re-run your translation function to update newly injected texts.
       if (typeof translatePage === 'function') {
         translatePage();
       }
@@ -126,10 +143,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Close modal when clicking the close button.
   modalCloseBtn.addEventListener('click', function() {
     modalContainer.classList.remove('active');
   });
+  
+  // Close modal when clicking on the overlay.
   overlay.addEventListener('click', function() {
     modalContainer.classList.remove('active');
   });
+  
+  // Close modal when clicking outside the modal content.
+  modalContainer.addEventListener('click', function(e) {
+    if (e.target === modalContainer) {
+      modalContainer.classList.remove('active');
+    }
+  });
+  
+  // Fix the "Contact Me" button.
+  if (contactBtn) {
+    contactBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = "contact.html";
+    });
+  }
 });
