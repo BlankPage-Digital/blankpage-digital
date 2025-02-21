@@ -38,22 +38,6 @@ const translations = {
     testimonial_title1: "Coming Soon",
     testimonials: "Testimonials",
     // About - Pricing
-    contact_me: "Contact me",
-    pricing_free_title: "Free Consultation",
-    pricing_free_text: "Enjoy a free 1-hour consultation to assess your current digital presence and receive initial suggestions.",
-    price_free: "Free",
-    product1_title: "IT Support and Consultation",
-    product1_text: "Overwhelmed by tech troubles? Our IT Support is tailored to help you navigate complex technical issues and optimize your business operations with precision and reliability.",
-    product1_price: "From 55-70 SEK per hour",
-    product2_title: "Marketing Services",
-    product2_text: "Need to make your brand stand out? Our Marketing Services provide strategic insights and actionable plans to boost your visibility and drive measurable growth.",
-    product2_price: "From 55-70 SEK per hour",
-    product3_title: "Website Development",
-    product3_text: "Your website is your digital storefront. Our Website Development packages are crafted to give you a professional online presence that is both functional and attractive. Tailored to suit every need, from personal blogs to robust business sites.",
-    product3_price: "From 150-2000 SEK per hour",
-
-
-    
   modal_free_title: "FREE CONSULTATION",
   modal_free_intro: "Welcome to BlankPage! Blank today, Limitless tomorrow. Discover the potential of your project with a complimentary one-hour consultation. This session is designed to explore your ideas and set the stage for a successful partnership, whether it is a new website, IT support, or a winning marketing strategy.",
   modal_free_text: "Offering: One-hour session to discuss your project in depth. Available in person, over the phone, or via written messages. Purpose: Explore ideas for website development, IT solutions, or marketing strategy. Price: FREE",
@@ -188,20 +172,6 @@ const translations = {
     testimonial_title1: "Kommer snart",
     testimonials: "Vittnesmål",
     // About - Pricing
-    contact_me: "Kontakta Mig",
-pricing_free_title: "Kostnadsfri konsultation",
-pricing_free_text: "Njut av en kostnadsfri timmes konsultation för att bedöma din nuvarande digitala närvaro och få inledande förslag.",
-price_free: "Gratis",
-product1_title: "IT-support och konsultation",
-product1_text: "Överväldigad av tekniska problem? Vår IT-support är skräddarsydd för att hjälpa dig navigera genom komplexa tekniska utmaningar och optimera dina affärsprocesser med precision och pålitlighet.",
-product1_price: "Från 55-70 SEK per timme",
-product2_title: "Marknadsföringstjänster",
-product2_text: "Behöver du få ditt varumärke att sticka ut? Våra marknadsföringstjänster ger strategiska insikter och handlingsplaner för att öka din synlighet och driva mätbar tillväxt.",
-product2_price: "Från 55-70 SEK per timme",
-product3_title: "Webbutveckling",
-product3_text: "Din webbplats är ditt digitala skyltfönster. Våra webbutvecklingspaket är utformade för att ge dig en professionell online-närvaro som är både funktionell och attraktiv. Anpassade för att möta alla behov, från personliga bloggar till robusta företagswebbplatser.",
-product3_price: "Från 150-2000 SEK per timme",
-
   modal_free_title: "KOSTNADSFRI KONSULTATION",
   modal_free_intro: "Välkommen till BlankPage! Skapa idag, obegränsat imorgon. Upptäck potentialen i ditt projekt med en kostnadsfri timmes konsultation. Denna session är utformad för att utforska dina idéer och lägga grunden för ett framgångsrikt samarbete, oavsett om det gäller en ny webbplats, IT-support eller en vinnande marknadsstrategi.",
   modal_free_text: "Erbjudande: En timmes session för att diskutera ditt projekt ingående.<br>Tillgänglig personligen, via telefon eller skriftliga meddelanden.<br>Syfte: Utforska idéer för webbplatsutveckling, IT-lösningar eller marknadsstrategi.<br>Pris: GRATIS",
@@ -336,20 +306,6 @@ product3_price: "Från 150-2000 SEK per timme",
     testimonial_title1: "În curând", 
     testimonials: "Referințe",
     //About - Pricing
-    contact_me: "Contactează-mă",
-pricing_free_title: "Consultanță Gratuită",
-pricing_free_text: "Bucură-te de o consultație gratuită de 1 oră pentru a evalua prezența ta digitală actuală și a primi sugestii inițiale.",
-price_free: "Gratuit",
-product1_title: "Suport IT și Consultanță",
-product1_text: "Copleșit de probleme tehnice? Suportul nostru IT este conceput pentru a te ajuta să navighezi prin probleme tehnice complexe și să optimizezi operațiunile afacerii tale cu precizie și fiabilitate.",
-product1_price: "De la 55-70 SEK pe oră",
-product2_title: "Servicii de Marketing",
-product2_text: "Ai nevoie ca brandul tău să iasă în evidență? Serviciile noastre de marketing oferă perspective strategice și planuri de acțiune pentru a-ți crește vizibilitatea și a genera creștere măsurabilă.",
-product2_price: "De la 55-70 SEK pe oră",
-product3_title: "Dezvoltare Website",
-product3_text: "Website-ul tău este vitrina ta digitală. Pachetele noastre de dezvoltare website sunt concepute pentru a-ți oferi o prezență online profesională, atât funcțională cât și atractivă. Personalizate pentru a se potrivi oricărei nevoi, de la bloguri personale la site-uri robuste de afaceri.",
-product3_price: "De la 150-2000 SEK pe oră",
-
   modal_free_title: "CONSULTAȚIE GRATUITĂ",
   modal_free_intro: "Bine ați venit la BlankPage! Astăzi simplu, mâine nelimitat. Descoperiți potențialul proiectului dumneavoastră cu o consultație gratuită de o oră. Această sesiune este concepută pentru a explora ideile dumneavoastră și a stabili baza pentru un parteneriat de succes, fie că este vorba despre un nou site, suport IT sau o strategie de marketing de succes.",
   modal_free_text: "Oferim: O sesiune de o oră pentru a discuta în detaliu proiectul dumneavoastră. Disponibilă personal, telefonic sau prin mesaje scrise.<br>Scop: Explorarea ideilor pentru dezvoltare web, soluții IT sau strategie de marketing.<br>Preț: GRATUIT",
@@ -473,6 +429,7 @@ function updateTheme(lang) {
 
 // Set up language switcher event listener.
 document.getElementById('language-select').addEventListener('change', function() {
+  // Remove language classes (if you use them elsewhere)
   document.body.classList.remove('lang-en', 'lang-sv', 'lang-ro');
   var lang = this.value;
   if (lang === 'en') {
