@@ -13,18 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
         <h4 data-i18n="modal_free_title">FREE CONSULTATION</h4>
         <p data-i18n="modal_free_intro">
           Welcome to BlankPage! Blank today, Limitless tomorrow.
-          <br>
-          Discover the potential of your project with a complimentary one-hour consultation. This session is designed to explore your ideas and set the stage for a successful partnership, whether it is a new website, IT support, or a winning marketing strategy.
-        </p><br>
+          <br>Discover the potential of your project with a complimentary one-hour consultation. This session is designed to explore your ideas and set the stage for a successful partnership, whether it is a new website, IT support, or a winning marketing strategy.
+        </p>
         <p data-i18n="modal_free_text">
-          -Offering: One-hour session to discuss your project in depth. Available in person, over the phone, or via written messages.
-          <br>
-          -Purpose: Explore ideas for website development, IT solutions, or marketing strategy.
-          <br>
-          -Price: FREE
-        </p><br><br>
+          <br>-Offering: One-hour session to discuss your project in depth. Available in person, over the phone, or via written messages.
+          <br>-Purpose: Explore ideas for website development, IT solutions, or marketing strategy.
+          <br>-Price: FREE
+        </p>
         <p data-i18n="modal_free_conclusion">
-          Note: This consultation is strictly an exploratory meeting. It includes no deliverables or follow-up work unless additional services are subsequently agreed upon.
+          <br><br>Note: This consultation is strictly an exploratory meeting. It includes no deliverables or follow-up work unless additional services are subsequently agreed upon.
         </p>
       </div>
     `,
@@ -33,32 +30,22 @@ document.addEventListener('DOMContentLoaded', function() {
         <h4 data-i18n="modal_strategy_title">IT SUPPORT</h4>
         <p data-i18n="modal_strategy_intro">
           Overwhelmed by tech troubles? Our IT Support is tailored to help you navigate complex technical issues and optimize your business operations with precision and reliability.
-        </p><br><br>
+        </p>
         <p data-i18n="modal_strategy_text">
-          One-Hour Session: 
-          <br>
-          -Price: 70 SEK per hour
-          <br><br>
-          Weekly Option: 
-          <br>
-          -Includes: 10 hours
-          <br>
-          -Price: 60 SEK per hour
-          <br>
-          -Total: 600 SEK
-          <br><br>
-          Monthly Option:
-          <br>
-          Includes: 40 hours (10 hours per week)
-          <br>
-          -Price: 55 SEK per hour
-          <br>
-          -Total: 2200 SEK
-        </p><br><br>
+          <br>One-Hour Session: 
+          <br>-Price: 70 SEK per hour
+          <br><br>Weekly Option: 
+          <br>-Includes: 10 hours
+          <br>-Price: 60 SEK per hour
+          <br>-Total: 600 SEK
+          <br><br>Monthly Option:
+          <br>-Includes: 40 hours (10 hours per week)
+          <br>-Price: 55 SEK per hour
+          <br>-Total: 2200 SEK
+        </p>
         <p data-i18n="modal_strategy_conclusion">
-          Terms & Conditions: Allocated hours must be utilized within the agreed period, and unused hours will expire. Should a task exceed the planned hours due to unforeseen complexities, no additional charges will be incurred within reasonable limits. This service covers consultation, troubleshooting, and post-service corrections (up to one week for single sessions, one month for weekly, and three months for monthly plans). External issues such as third-party service failures, data loss, or non-related technical complications are not covered.
-          <br><br>
-          Notes: Prices are quoted in SEK. Conversion to your local currency will be calculated on the date of payment. A 10% discount applies for both the referral and the referee on weekly and monthly options.
+          <br>Terms & Conditions: Allocated hours must be utilized within the agreed period, and unused hours will expire. Should a task exceed the planned hours due to unforeseen complexities, no additional charges will be incurred within reasonable limits. This service covers consultation, troubleshooting, and post-service corrections (up to one week for single sessions, one month for weekly, and three months for monthly plans). External issues such as third-party service failures, data loss, or non-related technical complications are not covered.
+          <br><br>Notes: Prices are quoted in SEK. Conversion to your local currency will be calculated on the date of payment. A 10% discount applies for both the referral and the referee on weekly and monthly options.
         </p>
       </div>
     `,
@@ -68,33 +55,22 @@ document.addEventListener('DOMContentLoaded', function() {
         <p data-i18n="modal_marketing_intro">
           Need to make your brand stand out? Our Marketing Services provide strategic insights and actionable plans to boost your visibility and drive measurable growth.
         </p>
-        <p data-i18n="modal_marketing_text"><br>
-          One-Hour Strategy Session:
-          <br>
-          -Price: 70 SEK per hour
-          <br>
-          -Includes: Discussing marketing decisions and strategy.
-          <br><br>
-          Marketing Kickstart Package: 
-          <br>
-          -Includes: 6 hours total. A comprehensive brand audit, initial strategy development, and a follow-up review.
-          <br>
-          -Price: 60 SEK per hour
-          <br>
-          -Total: 360 SEK
-          <br><br>
-          Marketing Growth Package:
-          <br>
-          -Includes: 20 hours spread over one month, delivering in-depth strategy development and tactical planning
-          <br>
-          -Price: 55 SEK per hour
-          <br>
-          -Total: 1100 SEK
+        <p data-i18n="modal_marketing_text">
+          <br>One-Hour Strategy Session:
+          <br>-Price: 70 SEK per hour
+          <br>-Includes: Discussing marketing decisions and strategy.
+          <br><br>Marketing Kickstart Package: 
+          <br>-Includes: 6 hours total. A comprehensive brand audit, initial strategy development, and a follow-up review.
+          <br>-Price: 60 SEK per hour
+          <br>-Total: 360 SEK
+          <br><br>Marketing Growth Package:
+          <br>-Includes: 20 hours spread over one month, delivering in-depth strategy development and tactical planning
+          <br>-Price: 55 SEK per hour
+          <br>-Total: 1100 SEK
         </p>
-        <p data-i18n="modal_marketing_conclusion"><br><br>
-          Terms & Conditions: The strategies and recommendations provided are based on industry best practices and current data. However, actual results may vary due to market conditions and implementation quality. Any additional work beyond the agreed scope will incur extra fees. External factors that affect campaign success are not within our responsibility.
-          <br><br>
-          Notes: Prices are quoted in SEK. Conversion to your local currency will be calculated on the date of payment. A 10% discount applies for both the referral and the referee on all applicable marketing packages.
+        <p data-i18n="modal_marketing_conclusion">
+          <br>Terms & Conditions: The strategies and recommendations provided are based on industry best practices and current data. However, actual results may vary due to market conditions and implementation quality. Any additional work beyond the agreed scope will incur extra fees. External factors that affect campaign success are not within our responsibility.
+          <br><br>Notes: Prices are quoted in SEK. Conversion to your local currency will be calculated on the date of payment. A 10% discount applies for both the referral and the referee on all applicable marketing packages.
         </p>
       </div>
     `,
@@ -103,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
         <h4 data-i18n="modal_website_title">WEBSITE DEVELOPMENT</h4>
         <p data-i18n="modal_website_intro">
           Your website is your digital storefront. Our Website Development packages are crafted to give you a professional online presence that is both functional and attractive. Tailored to suit every need, from personal blogs to robust business sites.
-        </p><br>
+        </p>
         <p data-i18n="modal_website_text">
-          Small Website Package:
+          <br>Small Website Package:
           <br>– Ideal for: Blogs, landing pages, or online CVs.
           <br>– Price Range: 150 – 500 SEK (depending on size and complexity).
           <br>– Delivery Time: 1–5 business days.
@@ -123,21 +99,18 @@ document.addEventListener('DOMContentLoaded', function() {
           <br>– Details: Coming Soon!<br><br>
         </p>
         <p data-i18n="modal_website_conclusion">
-          <br>Terms & Conditions: A detailed scope of work will be agreed upon prior to project commencement. The packages include only the specified features and support periods. Post-launch support is limited to bug fixes and minor modifications within the stated period. Any additional changes or extended maintenance will be subject to extra fees. We are not liable for delays or issues resulting from third-party platforms, domain registration, or external hosting services.
-          All additional costs (such as domain fees or subscription charges) are the client’s responsibility.
+          <br>Terms & Conditions: A detailed scope of work will be agreed upon prior to project commencement. The packages include only the specified features and support periods. Post-launch support is limited to bug fixes and minor modifications within the stated period. Any additional changes or extended maintenance will be subject to extra fees. We are not liable for delays or issues resulting from third-party platforms, domain registration, or external hosting services. All additional costs (such as domain fees or subscription charges) are the client’s responsibility.
           <br><br>Notes: Prices are quoted in SEK. Conversion to your local currency will be calculated on the date of payment. A 10% discount applies for both the referral and the referee on all applicable packages.
         </p>
       </div>
     `
   };
 
-  // Open modal and inject the appropriate content when a pricing option is clicked
   pricingOptions.forEach(option => {
     option.addEventListener('click', function() {
       const packageType = option.getAttribute('data-package-details');
       modalDetails.innerHTML = modalContent[packageType] || '<p data-i18n="modal_no_details">No details available.</p>';
       
-      // Re-run your translation function to update any newly injected data-i18n texts
       if (typeof translatePage === 'function') {
         translatePage();
       }
@@ -146,7 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Close modal on clicking the close button or overlay
   modalCloseBtn.addEventListener('click', function() {
     modalContainer.classList.remove('active');
   });
