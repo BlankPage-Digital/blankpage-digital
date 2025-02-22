@@ -1006,7 +1006,7 @@ main {
   border-radius: 4px;
   background: var(--primary-color);
   transition: opacity 0.3s ease;
-  z-index: 0;
+  z-index: 1;
 }
 
 .contact-btn span {
