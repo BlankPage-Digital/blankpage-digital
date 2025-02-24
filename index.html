@@ -909,6 +909,7 @@
           </section>
         </article>
         
+<!-- #BLOG SECTION -->
 <article class="blog" data-page="nav_blog">
   <header>
     <h2 class="h2 article-title" data-i18n="blog_heading1">Blog</h2>
@@ -934,44 +935,25 @@
   </section>
 </article>
 
-<!-- BLOG MODAL (placed outside the blog list) -->
-<div class="modal-container" id="blog-modal" data-modal-container style="display: none;">
-  <div class="overlay" data-overlay></div>
-  <section class="blog-modal">
-    <button class="modal-close-btn" data-modal-close-btn onclick="closeBlogModal()">
+<!-- #BLOG MODAL -->
+<div class="modal-container" data-blog-modal-container style="display: none;">
+  <div class="overlay" data-blog-overlay></div>
+  <section class="blog-modal" data-blog-modal>
+    <button class="modal-close-btn" data-blog-modal-close onclick="closeBlogModal()">
       <ion-icon name="close-outline"></ion-icon>
     </button>
     <div class="modal-content">
-      <header class="modal-header">
-        <h2 class="modal-title" data-i18n="blog_post_title1">
-          BlankPage: Bridging Theory and Practice
-        </h2>
-        <p class="modal-slogan">Blank today, Limitless tomorrow</p>
-      </header>
-      <article class="modal-body">
-        <p>
-          BlankPage began as a personal venture during my studies at Jönköping International Business School. It reflects my desire to apply academic knowledge to real-life challenges within the digital sphere.
-        </p>
-        <p>
-          I assist clients with enhancing their digital presence through website development, marketing strategy and consulting on platforms such as WordPress, Shopify and GitHub. My approach is to blend the theoretical insights from my studies with practical, hands-on experience, ensuring that each project is a collaborative effort and a step towards a more effective online presence.
-        </p>
-        <p>
-          The name “BlankPage” symbolises a fresh start: every project begins with a clear, open canvas, ready to be filled through collaborative effort. It also recalls a simple group chat where ideas flowed freely, reminding me that creativity is born from honest conversation. This ethos is at the heart of what BlankPage offers.
-        </p>
-        <p>
-          If you are looking to refine your digital identity or start a new project, I invite you to get in touch. Let us work together to transform a blank page into the first chapter of your brand’s future.
-        </p>
-      </article>
-      <figure class="modal-visual">
-        <img src="your-logo.png" alt="BlankPage Logo">
-        <figcaption>Your blank canvas for new ideas</figcaption>
+      <figure class="modal-banner-box">
+        <img src="" alt="" data-modal-blog-cover>
       </figure>
-      <footer class="modal-footer">
-        <button class="btn btn-primary" onclick="closeBlogModal()">Close</button>
-      </footer>
+      <h3 class="h3 modal-title" data-modal-blog-title data-i18n="blog_modal_title1"></h3>
+      <time datetime="" data-modal-blog-date data-i18n="blog_modal_date1"></time>
+      <div class="modal-text" data-modal-blog-text data-i18n="blog_modal_text1"></div>
+      <div class="modal-extra-images" data-modal-blog-extra-images></div>
     </div>
   </section>
 </div>
+
 
     </main>
 
