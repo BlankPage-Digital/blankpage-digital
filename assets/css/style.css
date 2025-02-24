@@ -49,6 +49,7 @@
   --bittersweet-shimmer: hsl(0, 43%, 51%);
   --primary-color: #5928B1;
   --background-lang-color: #3D2B42;
+  --icon-inside: #888888;
 
   /* Typography */
   --ff-primary: 'Inter', sans-serif !important;
@@ -2247,6 +2248,10 @@ a:active {
   color: var(--primary-color);
   font-size: 48px;
   fill: var(--primary-color);
+}
+.service-icon-detailed {
+  width: 64px;
+  height: 64px;
 }
 
 .testimonial-quote {
