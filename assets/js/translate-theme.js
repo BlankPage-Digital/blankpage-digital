@@ -31,7 +31,7 @@ const translations = {
     service_item4: "SEO (Coming Soon)",
     service_text4: "Get ready for organic growth with comprehensive keyword research, on-page optimization, and data-driven strategies designed to boost your search rankings.",
     // About - Testimonials
-    testimonial_modal_title1: "Swim GSM SRL",
+    testimonial_modal_title1: "Tobias Wahlmér",
     testimonial_modal_date1: "24 February 2025",
     testimonial_modal_text1: "Informal internship period with Swim GSM SRL",
     testimonial_text1: "Informal internship period with Swim GSM SRL",
