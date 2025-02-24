@@ -17,7 +17,7 @@ const translations = {
     nav_blog: "Blog",
     // About - Me
     about_heading: "About me",
-    about_text1: "Hello, my name is <strong>Gabriel Stanciu</strong>. I am originally from Romania, but I am studying in Sweden, at Jönköping International Business School, for a Bachelor in Business Administration. My academic journey in fuels my drive to combine theory with hands-on experience. Thus, I have decided to take the next step and venture in a new project, which I have called BlankPage.",
+    about_text1: "Hello, my name is <strong>Gabriel Stanciu</strong>. I am originally from Romania, but I am studying in Sweden, at Jönköping International Business School, for a Bachelor in Business Administration. My academic journey in fuels my drive to combine theory with hands-on experience. Thus, I have decided to take the next step and venture in a new project, which I have named BlankPage.",
     about_text2: "As a Freelance IT & Marketing Consultant, I specialise in crafting marketing strategies that make a difference for my clients. Additionally, I also have experience in creating websites for all purposes, in platforms such as Shopify, Wordpress, and GitHub.",
     about_text3: "I am always aiming to gain knowledge. I am currently developing skills SEO, Python, and SQL, to broaden my skillset and expand my operations.",
     // About - Services
@@ -165,7 +165,7 @@ contact_me: "Contact me",
     nav_blog: "Blogg",
     // About - Me
     about_heading: "Om mig",
-    about_text1: "Hej, mitt namn är <strong>Gabriel Stanciu</strong>. Jag kommer ursprungligen från Rumänien, men studerar i Sverige vid Jönköpings Internationella Handelshögskola för en kandidatexamen i företagsekonomi. Min akademiska resa ger mig drivkraften att kombinera teori med praktisk erfarenhet. Därför har jag bestämt mig för att ta nästa steg och ge mig in i ett nytt projekt, som jag har namget BlankPage.",
+    about_text1: "Hej, mitt namn är <strong>Gabriel Stanciu</strong>. Jag kommer ursprungligen från Rumänien, men studerar i Sverige vid Jönköpings Internationella Handelshögskola för en kandidatexamen i företagsekonomi. Min akademiska resa ger mig drivkraften att kombinera teori med praktisk erfarenhet. Därför har jag bestämt mig för att ta nästa steg och ge mig in i ett nytt projekt, som jag har namnget BlankPage.",
     about_text2: "Som frilansande IT- och marknadsföringskonsult specialiserar jag mig på att skapa marknadsstrategier som gör skillnad för mina kunder. Dessutom har jag erfarenhet av att skapa webbplatser för alla ändamål, på plattformar som Shopify, WordPress och GitHub.",
     about_text3: "Jag strävar alltid efter att skaffa mig ny kunskap. Jag håller för närvarande på att utveckla färdigheter i SEO, Python och SQL för att bredda min kompetens och utöka min verksamhet.",
     // - Services
