@@ -402,60 +402,61 @@
   </section>
 </div>
 
-          <!-- #TESTIMONIALS -->
-          <section class="testimonials">
-            <h3 class="h3 testimonials-title" data-i18n="testimonials">
-              Testimonials
-            </h3>
-            <ul class="testimonials-list has-scrollbar">
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img src="./assets/images/clubdaimond_logo.png" alt="Client1" width="60" data-testimonials-avatar>
-                  </figure>
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title data-i18n="testimonial_title1">
-                    Professional & Analytical Collaborator
-                  </h4>
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p data-i18n="testimonial_text1">
-                      xceptionally skilled in Excel, highly analytical, and dedicated to supporting others’ success.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          
-          <!-- #TESTIMONIALS MODAL -->
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay>
-            </div>
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline">
-                </ion-icon>
-              </button>
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img src="./assets/images/project_coming_soon.png" alt="To be revealed" width="80" data-modal-img>
-                </figure>
-                <img src="./assets/images/icon-quote.svg" alt="quote icon">
-              </div>
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title data-i18n="testimonial_modal_title1">
-                  Tobias Wahlmér, Head of Internal at JIBS Student Association
-                </h4>
-                <time datetime="TBD" data-i18n="testimonial_modal_date1">
-                  24 February 2025
-                </time>
-                <div data-modal-text>
-                  <p data-i18n="testimonial_modal_text1">
-                    Alongside my studies, I have had the great opportunity to work with Gabi. Gabi is a well-educated, dedicated student who demonstrates a strong focus on learning within his coursework. He is exceptionally skilled in Excel and highly analytical with numbers. In addition, he is keen to support others in reaching their goals.<br><br><a href='https://www.linkedin.com/in/tobiaswahlmer/' target='_blank' rel='noopener'>View Tobias' LinkedIn Profile</a>
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
+<!-- #TESTIMONIALS -->
+<section class="testimonials">
+  <h3 class="h3 testimonials-title" data-i18n="testimonials">
+    Testimonials
+  </h3>
+  <ul class="testimonials-list has-scrollbar">
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/clubdaimond_logo.png" alt="Client1" width="60" data-testimonials-avatar>
+        </figure>
+        <h4 class="h4 testimonials-item-title" data-testimonials-title data-i18n="testimonial_title1">
+          Professional & Analytical Collaborator
+        </h4>
+        <div class="testimonials-text" data-testimonials-text>
+          <p data-i18n="testimonial_text1">
+            Exceptionally skilled in Excel, highly analytical, and dedicated to supporting others’ success.
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- #TESTIMONIALS MODAL -->
+<div class="modal-container" data-modal-container>
+  <div class="overlay" data-overlay></div>
+  <section class="testimonials-modal">
+    <button class="modal-close-btn" data-modal-close-btn>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img src="./assets/images/project_coming_soon.png" alt="To be revealed" width="80" data-modal-img>
+      </figure>
+      <img src="./assets/images/icon-quote.svg" alt="quote icon">
+    </div>
+    <div class="modal-content">
+      <h4 class="h3 modal-title" data-modal-title data-i18n="testimonial_modal_title1">
+        Tobias Wahlmér, Head of Internal at JIBS Student Association
+      </h4>
+      <time datetime="2025-02-24" data-i18n="testimonial_modal_date1">
+        24 February 2025
+      </time>
+      <div data-modal-text>
+        <p data-i18n="testimonial_modal_text1">
+          Alongside my studies, I have had the great opportunity to work with Gabi. Gabi is a well-educated, dedicated student who demonstrates a strong focus on learning within his coursework. He is exceptionally skilled in Excel and highly analytical with numbers. In addition, he is keen to support others in reaching their goals.<br><br>
+          <a href="https://www.linkedin.com/in/tobiaswahlmer/" target="_blank" rel="noopener">
+            View Tobias' LinkedIn Profile
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
           
           <!-- #CLIENTS -->
           <section class="clients">
@@ -908,7 +909,6 @@
           </section>
         </article>
         
-<!-- #BLOG SECTION -->
 <article class="blog" data-page="nav_blog">
   <header>
     <h2 class="h2 article-title" data-i18n="blog_heading1">Blog</h2>
@@ -916,7 +916,7 @@
   <section class="blog-posts">
     <ul class="blog-posts-list">
       <li class="blog-post-item" data-blog-item data-i18n="blog_post_item1">
-        <div class="blog-preview" data-blog-preview style="cursor: pointer;">
+        <div class="blog-preview" data-blog-preview style="cursor: pointer;" onclick="openBlogModal()">
           <figure class="blog-banner-box">
             <img src="./assets/images/project_coming_soon.png" alt="Coming Soon" loading="lazy" data-blog-cover>
           </figure>
@@ -927,60 +927,52 @@
             <p class="blog-text" data-blog-preview-text data-i18n="blog_post_preview1">
               Blank today, Limitless tomorrow
             </p>
-  <div class="modal-content">
-  <header class="modal-header">
-    <h2 class="modal-title">BlankPage: Bridging Theory and Practice</h2>
-    <p class="modal-slogan">Blank today, Limitless tomorrow</p>
-  </header>
-  
-  <article class="modal-body">
-    <p>
-      BlankPage began as a personal venture during my studies at Jönköping International Business School. It reflects my desire to apply academic knowledge to real-life challenges within the digital sphere.
-    </p>
-    <p>
-      I assist clients with enhancing their digital presence through website development, marketing strategy and consulting on platforms such as WordPress, Shopify and GitHub. My approach is to blend the theoretical insights from my studies with practical, hands-on experience, ensuring that each project is a collaborative effort and a step towards a more effective online presence.
-    </p>
-    <p>
-      The name “BlankPage” symbolises a fresh start: every project begins with a clear, open canvas, ready to be filled through collaborative effort. It also recalls a simple group chat where ideas flowed freely, reminding me that creativity is born from honest conversation. This ethos is at the heart of what BlankPage offers.
-    </p>
-    <p>
-      If you are looking to refine your digital identity or start a new project, I invite you to get in touch. Let us work together to transform a blank page into the first chapter of your brand’s future.
-    </p>
-  </article>
-  
-  <figure class="modal-visual">
-    <!-- Replace 'your-logo.png' with your logo file name or another suggested image -->
-    <img src="your-logo.png" alt="BlankPage Logo">
-    <figcaption>Your blank canvas for new ideas</figcaption>
-  </figure>
-  
-  <footer class="modal-footer">
-    <button class="btn btn-primary" onclick="closeModal()">Close</button>
-  </footer>
-</div>
+          </div>
+        </div>
       </li>
     </ul>
   </section>
 </article>
 
-<!-- #BLOG MODAL-->
-<div class="modal-container" data-blog-modal-container>
-  <div class="overlay" data-blog-overlay></div>
-  <section class="blog-modal" data-blog-modal>
-    <button class="modal-close-btn" data-blog-modal-close>
+<!-- BLOG MODAL (placed outside the blog list) -->
+<div class="modal-container" id="blog-modal" data-modal-container style="display: none;">
+  <div class="overlay" data-overlay></div>
+  <section class="blog-modal">
+    <button class="modal-close-btn" data-modal-close-btn onclick="closeBlogModal()">
       <ion-icon name="close-outline"></ion-icon>
     </button>
     <div class="modal-content">
-      <figure class="modal-banner-box">
-        <img src="" alt="" data-modal-blog-cover>
+      <header class="modal-header">
+        <h2 class="modal-title" data-i18n="blog_post_title1">
+          BlankPage: Bridging Theory and Practice
+        </h2>
+        <p class="modal-slogan">Blank today, Limitless tomorrow</p>
+      </header>
+      <article class="modal-body">
+        <p>
+          BlankPage began as a personal venture during my studies at Jönköping International Business School. It reflects my desire to apply academic knowledge to real-life challenges within the digital sphere.
+        </p>
+        <p>
+          I assist clients with enhancing their digital presence through website development, marketing strategy and consulting on platforms such as WordPress, Shopify and GitHub. My approach is to blend the theoretical insights from my studies with practical, hands-on experience, ensuring that each project is a collaborative effort and a step towards a more effective online presence.
+        </p>
+        <p>
+          The name “BlankPage” symbolises a fresh start: every project begins with a clear, open canvas, ready to be filled through collaborative effort. It also recalls a simple group chat where ideas flowed freely, reminding me that creativity is born from honest conversation. This ethos is at the heart of what BlankPage offers.
+        </p>
+        <p>
+          If you are looking to refine your digital identity or start a new project, I invite you to get in touch. Let us work together to transform a blank page into the first chapter of your brand’s future.
+        </p>
+      </article>
+      <figure class="modal-visual">
+        <img src="your-logo.png" alt="BlankPage Logo">
+        <figcaption>Your blank canvas for new ideas</figcaption>
       </figure>
-      <h3 class="h3 modal-title" data-modal-blog-title data-i18n="blog_modal_title1"></h3>
-      <time datetime="" data-modal-blog-date data-i18n="blog_modal_date1"></time>
-      <div class="modal-text" data-modal-blog-text data-i18n="blog_modal_text1"></div>
-      <div class="modal-extra-images" data-modal-blog-extra-images></div>
+      <footer class="modal-footer">
+        <button class="btn btn-primary" onclick="closeBlogModal()">Close</button>
+      </footer>
     </div>
   </section>
 </div>
+
     </main>
 
     <!-- #SCRIPTS -->
