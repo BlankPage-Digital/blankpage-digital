@@ -2200,3 +2200,18 @@ textarea.form-input::-webkit-resizer {
   0% { transform: translateY(0) rotate(0deg); }
   100% { transform: translateY(-100vh) rotate(360deg); }
 }
+
+/* Extras */
+a,
+a:visited,
+a:hover,
+a:active {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+
+ion-icon {
+  color: var(--primary-color);
+  font-size: 48px;
+}
+
