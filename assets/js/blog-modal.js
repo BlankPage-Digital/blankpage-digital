@@ -31,9 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       modalCover.src = coverImg.src;
       modalCover.alt = coverImg.alt;
-      modalTitle.textContent = titleElem.textContent;
-      modalDate.textContent = dateElem ? dateElem.textContent : '';
-      modalText.textContent = previewText.textContent;
 
       // Clear any previous extra images
       modalExtraImages.innerHTML = '';
