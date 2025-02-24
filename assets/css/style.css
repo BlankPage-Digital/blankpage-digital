@@ -2247,11 +2247,16 @@ a:active {
 .service-icon-detailed {
   width: 64px;
   height: 64px;
-  color: var(--primary-color); /* Controls stroke color */
-  fill: var(--icon-fill);      /* Controls inner fill color */
-  stroke: currentColor;        /* Ensures stroke uses primary color */
-  stroke-width: 1.2;           /* Add this for better visibility */
+  color: var(--primary-color); /* Stroke color */
 }
+
+.service-icon-detailed path {
+  stroke: currentColor;
+  fill: var(--icon-fill);
+  stroke-width: 1.5;
+  transition: all 0.3s ease;
+}
+
 .service-icon {
   color: var(--primary-color);
   font-size: 48px;
