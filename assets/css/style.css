@@ -2242,7 +2242,7 @@ a:active {
     text-decoration: none;
 }
 
-.service-icons .service-icon {
+.service-icon {
   color: var(--primary-color);
   font-size: 48px;
   fill: var(--primary-color);
