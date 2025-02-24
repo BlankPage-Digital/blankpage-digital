@@ -756,23 +756,20 @@ main {
 .cta-videos {
   padding: 2rem 0;
 }
-
 .cta-videos .video-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .cta-videos .video {
   flex: 1 1 calc(50% - 20px);
 }
-
 .cta-videos iframe {
   width: 100%;
-  height: 200px; /* Adjust height as needed */
+  height: 200px;
   border: none;
+  border-radius: 10px;
 }
-
 @media (max-width: 768px) {
   .cta-videos .video {
     flex: 1 1 100%;
@@ -2241,13 +2238,14 @@ a,
 a:visited,
 a:hover,
 a:active {
-    color: var(--primary-color) !important;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
-#service-icons .service-icon {
+.service-icons .service-icon {
   color: var(--primary-color);
   font-size: 48px;
+  fill: var(--primary-color);
 }
 
 .testimonial-quote {
