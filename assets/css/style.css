@@ -49,7 +49,7 @@
   --bittersweet-shimmer: hsl(0, 43%, 51%);
   --primary-color: #5928B1;
   --background-lang-color: #3D2B42;
-  --icon-inside: #a9a9a9;
+  --icon-inside: hsl(0, 0%, 12%);
 
   /* Typography */
   --ff-primary: 'Inter', sans-serif !important;
