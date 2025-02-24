@@ -752,7 +752,7 @@ main {
 .cta-title {
   text-align: left;
   margin-bottom: 20px;
-  colour: var(--white-2);
+  color: var(--white-2);
 }
 .cta-videos {
   padding: 2rem 0;
