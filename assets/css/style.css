@@ -2247,14 +2247,13 @@ a:active {
 .service-icon-detailed {
   width: 64px;
   height: 64px;
-  color: var(--primary-color); /* Stroke color */
-}
-
-.service-icon-detailed path {
-  stroke: currentColor;
-  fill: var(--icon-fill);
+  color: var(--primary-color);  /* Stroke color */
+  fill: var(--icon-fill);       /* Inner fill */
+  stroke: currentColor;         /* Inherit stroke from color */
   stroke-width: 1.5;
-  transition: all 0.3s ease;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  overflow: visible;            /* Prevent clipping */
 }
 
 .service-icon {
