@@ -805,8 +805,8 @@ main {
   min-width: unset%;
   max-width: 600px;
   width: 50%;
-  margin: 0 auto;
-  scroll-snap-align: center;
+  margin: 0;
+  scroll-snap-align: auto;
 }
 .testimonials-avatar-box {
   position: absolute;
@@ -1904,9 +1904,13 @@ textarea.form-input::-webkit-resizer {
   .testimonials-avatar-box {
     transform: translate(30px, -30px);
     border-radius: 20px;
+    overflow: hidden;
   }
   .testimonials-avatar-box img {
+    border-radius: 12px;
     width: 80px;
+    height: 100%;
+    object-fit: cover;
   }
   .testimonials-item-title {
     margin-bottom: 10px;
