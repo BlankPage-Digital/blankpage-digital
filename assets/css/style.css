@@ -766,7 +766,7 @@ main {
 .cta-videos .video {
   flex: 1 1 calc(50% - 20px);
 }
-.cta-videos .video {
+.cta-videos video {
   width: 100%;
   height: 200px;
   border: none;
