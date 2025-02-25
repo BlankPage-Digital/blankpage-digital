@@ -144,7 +144,7 @@ contact_me: "Contact me",
     portfolio_filter_o4: "GitHub",
     // Blog
     blog_heading: "Blog",
-    blog_note: "Note: All blog posts will be available in English only."
+    blog_note: "Note: All blog posts will be available in English only.<br>"
   },
   sv: {
     // Sidebar
@@ -291,7 +291,7 @@ contact_me: "Kontakta mig",
     portfolio_filter_o4: "GitHub",
     // Blog
     blog_heading: "Blogg",
-    blog_note: "Obs: Alla blogginlägg kommer endast att finnas tillgängliga på engelska."
+    blog_note: "Obs: Alla blogginlägg kommer endast att finnas tillgängliga på engelska.<br>"
   },
   ro: {
     // Sidebar
@@ -438,7 +438,7 @@ contact_me: "Contactează-mă",
     portfolio_filter_o4: "GitHub",
     // Blog
     blog_heading: "Blog",
-    blog_note: "Notă: Postările de pe blog vor fi disponibile doar în limba engleză."
+    blog_note: "Notă: Postările de pe blog vor fi disponibile doar în limba engleză.<br>"
   }
 };
 
