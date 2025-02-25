@@ -144,8 +144,8 @@ contact_me: "Contact me",
     portfolio_filter_o4: "GitHub",
     // Blog
     blog_heading: "Blog",
-    blog_post_title1: "New blog post coming soon!",
-    blog_post_preview1: "Stay tuned!"
+    blog_post_title1: "Bridging Theory and Practice with BlankPage",
+    blog_post_preview1: "Read more about what the 'BlankPage' project is."
   },
   sv: {
     // Sidebar
@@ -292,8 +292,8 @@ contact_me: "Kontakta mig",
     portfolio_filter_o4: "GitHub",
     // Blog
     blog_heading: "Blogg",
-    blog_post_title1: "Nytt blogginlägg kommer snart!",
-    blog_post_preview1: "Håll utkik!"
+    blog_post_title1: "Bridging Theory and Practice with BlankPage",
+    blog_post_preview1: "Read more about what the 'BlankPage' project is."
   },
   ro: {
     // Sidebar
@@ -440,8 +440,8 @@ contact_me: "Contactează-mă",
     portfolio_filter_o4: "GitHub",
     // Blog
     blog_heading: "Blog",
-    blog_post_title1: "Un nou articol de blog vine în curând!",
-    blog_post_preview1: "Stați pe fază!"
+    blog_post_title1: "Bridging Theory and Practice with BlankPage",
+    blog_post_preview1: "Read more about what the 'BlankPage' project is."
   }
 };
 
