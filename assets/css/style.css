@@ -814,7 +814,7 @@ main {
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
-  border-radius: 12px !important;
+  border-radius: 12px;
   box-shadow: var(--shadow-1);
   overflow: hidden;
 }
