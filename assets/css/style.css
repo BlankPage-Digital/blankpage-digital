@@ -1530,6 +1530,20 @@ main {
   transition: color 0.3s ease;
 }
 
+.blog-date {
+  display: block;
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 0.5em;
+}
+
+.blog-note {
+  text-align: center;
+  font-size: 12px;
+  color: var(--light-gray-70);
+  margin-top: 15px;
+}
+
 /*--------------------------------------------------------------
    Blog Modal Styles
 --------------------------------------------------------------*/
