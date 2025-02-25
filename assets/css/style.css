@@ -956,21 +956,6 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-.modal-img-wrapper {
-  position: relative;
-}
-.quote-mark {
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  transform: rotate(180deg);
-  z-index: 1;
-}
-.quote-mark path {
-  stroke: var(--primary-color);
-  stroke-width: 1.5;
-  fill: none;
-}
 
 /*--------------------------------------------------------------
    Pricing Section
