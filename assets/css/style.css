@@ -961,10 +961,10 @@ main {
 }
 .quote-mark {
   position: absolute;
-  top: -25px;
-  left: -25px;
+  top: -15px;
+  left: -15px;
   transform: rotate(180deg);
-  z-index: -1;
+  z-index: 1;
 }
 .quote-mark path {
   stroke: var(--primary-color);
