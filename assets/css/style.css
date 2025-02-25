@@ -799,10 +799,13 @@ main {
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
+  scroll-snap-type: x mandatory;
 }
 .testimonials-item {
-  min-width: 100%;
+  min-width: unset%;
+  max-width: 600px;
+  width: 80%;
+  margin: 0 auto;
   scroll-snap-align: center;
 }
 .testimonials-avatar-box {
@@ -811,8 +814,9 @@ main {
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
-  border-radius: 14px;
+  border-radius: 12px;
   box-shadow: var(--shadow-1);
+  overflow: hidden;
 }
 .testimonials-item-title {
   margin-bottom: 7px;
@@ -833,7 +837,7 @@ main {
   transition: transform 0.3s ease;
 }
 
-.testimonials-item .testimonials-item-title {
+ .testimonials-item-title {
   transition: color 0.3s ease;
 }
 
