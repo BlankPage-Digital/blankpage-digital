@@ -1004,6 +1004,9 @@ main {
   justify-content: center;
 }
 .pricing-option {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -1088,6 +1091,18 @@ main {
 .coming-soon {
   opacity: 0.7;
   pointer-events: none;
+}
+
+.pricing-option .price {
+  margin-top: auto;
+}
+
+.pricing-option .price-extra {
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: var(--light-gray);
+  margin-top: 5px;
+}
 }
 
 /* Pricing Modal Styles */
