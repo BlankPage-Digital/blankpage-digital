@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
       // Update modal content
       const modalCover = document.querySelector('[data-modal-blog-cover]');
       const modalTitle = document.querySelector('[data-modal-blog-title]');
-      const modalDate = document.querySelector('[data-modal-blog-date]');
       const modalText = document.querySelector('[data-modal-blog-text]');
       const modalExtraImages = document.querySelector('[data-modal-blog-extra-images]');
 
