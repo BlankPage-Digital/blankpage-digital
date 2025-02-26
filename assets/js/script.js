@@ -13,22 +13,21 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 
-// **Updated modal selectors: select all modals, overlays, images, titles, and texts**
+// Updated modal selectors: select all modal containers, close buttons, overlays, and images
 const modalContainers = document.querySelectorAll("[data-modal-container]");
 const modalCloseBtns = document.querySelectorAll("[data-modal-close-btn]");
 const overlays = document.querySelectorAll("[data-overlay]");
 const modalImgs = document.querySelectorAll("[data-modal-img]");
-// If needed, you can also grab titles and texts:
+// (Optional: if you need modal titles and texts, uncomment these)
 // const modalTitles = document.querySelectorAll("[data-modal-title]");
 // const modalTexts = document.querySelectorAll("[data-modal-text]");
 
 // add click event to all testimonial items
 testimonialsItem.forEach((item, index) => {
   item.addEventListener("click", function () {
-    // Update the modal image (if needed)
+    // Update the modal image from the clicked testimonial
     modalImgs[index].src = this.querySelector("[data-testimonials-avatar]").src;
     modalImgs[index].alt = this.querySelector("[data-testimonials-avatar]").alt;
-
     // Show the corresponding modal and overlay
     modalContainers[index].classList.add("active");
     overlays[index].classList.add("active");
@@ -50,11 +49,6 @@ overlays.forEach((ovr, index) => {
     overlays[index].classList.remove("active");
   });
 });
-
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
 
 // custom select variables
 const select = document.querySelector("[data-select]");
