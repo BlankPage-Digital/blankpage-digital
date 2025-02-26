@@ -747,6 +747,31 @@ main {
 }
 
 
+@media (max-width: 768px) {
+  /* Make each service item stack vertically and center its content */
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Center the icon container and its image */
+  .service-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* optional spacing between icon and text */
+  }
+  
+  .service-icon-box img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
    Call for Action Section
 --------------------------------------------------------------*/
