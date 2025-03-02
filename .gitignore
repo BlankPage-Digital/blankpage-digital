@@ -1,0 +1,31 @@
+# Local development
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Build/temp files
+dist/
+build/
+*.min.js  # Unless you commit minified files
+*.min.css
+
+# Sensitive data
+.env
+*.key
+*.pem
+secrets.*
+
+# Large media (optional)
+# *.mp4  # Uncomment if you move videos to external hosting
+*.zip
+
+# Cache/backup
+*.bak
+*.cache
+*.swp
