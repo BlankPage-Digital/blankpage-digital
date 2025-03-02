@@ -81,12 +81,12 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('assets/css/fonts/Inter_18pt-Regular.ttf') format('truetype');
+  src: url('/assets/css/fonts/Inter_18pt-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Inter';
-  src: url('assets/css/fonts/Inter_18pt-Bold.ttf') format('truetype');
+  src: url('/assets/css/fonts/Inter_18pt-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
