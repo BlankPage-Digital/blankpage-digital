@@ -77,8 +77,6 @@
   /* Transitions */
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
-
-  --radius-50: 50%;
 }
 
 @font-face {
@@ -353,7 +351,7 @@ main {
 }
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: var(--radius-50); /* Sadee’s circular style */
+  border-radius: 12px; /* Sadee’s circular style */
   overflow: hidden;
   --size: 150px;
   width: var(--size);
@@ -364,7 +362,7 @@ main {
   max-width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: var(--radius-50);
+  border-radius: 12px;
 }
 .info-content .name {
   color: var(--white-2);
@@ -1836,7 +1834,7 @@ textarea.form-input::-webkit-resizer {
 }
 @media (max-width: 600px) {
   .sidebar .avatar-box {
-    --size: 100px; /* Sadee’s mobile size */
+    --size: 60px; /* Sadee’s mobile size */
   }
 }
 @media (max-width: 600px) {
