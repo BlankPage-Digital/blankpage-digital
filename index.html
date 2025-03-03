@@ -173,7 +173,7 @@
               What Services I can offer
             </h3>
             <ul class="service-list">
-              <li class="service-item">
+              <li class="service-item" data-service-details="it-support">
                 <div class="service-icon-box">
 <svg class="service-icon-detailed" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -256,7 +256,7 @@ m168 -162 c55 -16 138 -99 154 -154 28 -94 8 -169 -63 -239 -51 -52 -102 -75
                   </p>
                 </div>
               </li>
-              <li class="service-item">
+              <li class="service-item" data-service-details="marketing-service">
                 <div class="service-icon-box">
 <svg class="service-icon-detailed" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -365,7 +365,7 @@ m149 -136 c154 -99 182 -292 81 -570 -70 -194 -179 -367 -324 -512 -82 -83
                   </p>
                 </div>
               </li>
-              <li class="service-item">
+              <li class="service-item" data-service-details="website-dev">
                 <div class="service-icon-box">
 <svg class="service-icon-detailed" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -431,7 +431,7 @@ l3 -1355 37 -76 c45 -91 103 -147 196 -191 l67 -32 652 -5 651 -5 -47 -115
                   </p>
                 </div>
               </li>
-              <li class="service-item">
+              <li class="service-item" data-service-details="seo">
                 <div class="service-icon-box">
 <svg class="service-icon-detailed" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -500,7 +500,73 @@ l-7 -47 79 0 79 0 12 44 c14 52 66 102 117 112 l35 6 0 79 c0 87 0 88 -76 70z"/>
               </li>
             </ul>
           </section>
+          
+<!-- Service Modal -->
+<div class="modal-container service-modal-container" data-service-modal-container>
+  <div class="overlay" data-service-overlay></div>
+  <section class="service-modal" data-service-modal>
+    <button class="modal-close-btn" data-service-modal-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <div class="modal-content">
+      <h3 class="modal-title" data-modal-service-title data-i18n="service_modal_title">Service Details</h3>
+      <div class="modal-content-section" data-modal-content="it-support" style="display:none;">
+        <h4 data-i18n="service_it_support_title">IT SUPPORT</h4>
+        <p data-i18n="service_it_support_intro">
+          Overwhelmed by tech troubles? Our IT Support is tailored to help you navigate complex technical issues and optimize your business operations with precision and reliability.
+        </p>
+        <p data-i18n="service_it_support_details">
+          One-Hour Session: Price: 70 SEK per hour<br>
+          Weekly Option: Includes 10 hours, 60 SEK per hour, Total: 600 SEK<br>
+          Monthly Option: Includes 40 hours, 55 SEK per hour, Total: 2200 SEK
+        </p>
+        <p data-i18n="service_it_support_terms">
+          Terms & Conditions: Allocated hours must be utilized within the agreed period. Post-service corrections are covered for one week (single), one month (weekly), and three months (monthly). External issues like third-party failures are not covered.
+        </p>
+      </div>
+      <div class="modal-content-section" data-modal-content="marketing-service" style="display:none;">
+        <h4 data-i18n="service_marketing_title">MARKETING SERVICES</h4>
+        <p data-i18n="service_marketing_intro">
+          Need to make your brand stand out? Our Marketing Services provide strategic insights and actionable plans to boost your visibility and drive measurable growth.
+        </p>
+        <p data-i18n="service_marketing_details">
+          One-Hour Strategy Session: 70 SEK per hour<br>
+          Marketing Kickstart Package: 6 hours, 60 SEK per hour, Total: 360 SEK<br>
+          Marketing Growth Package: 20 hours, 55 SEK per hour, Total: 1100 SEK
+        </p>
+        <p data-i18n="service_marketing_terms">
+          Terms & Conditions: Results may vary due to market conditions. Additional work beyond scope incurs extra fees. External factors affecting campaigns are not our responsibility.
+        </p>
+      </div>
+      <div class="modal-content-section" data-modal-content="website-dev" style="display:none;">
+        <h4 data-i18n="service_website_title">WEBSITE DEVELOPMENT</h4>
+        <p data-i18n="service_website_intro">
+          Your website is your digital storefront. My Website Development packages are crafted to give you a professional online presence that is both functional and attractive.
+        </p>
+        <p data-i18n="service_website_details">
+          Mini Website Package: 150–500 SEK, 1–5 days<br>
+          Regular Website Package: 1500–2000 SEK, 2–3 weeks<br>
+          Premium Website Package: Coming Soon!
+        </p>
+        <p data-i18n="service_website_terms">
+          Terms & Conditions: Scope agreed before start. Post-launch support limited to bug fixes. Additional costs (domains, plugins) are client’s responsibility.
+        </p>
+      </div>
+      <div class="modal-content-section" data-modal-content="seo" style="display:none;">
+        <h4 data-i18n="service_seo_title">SEO (COMING SOON)</h4>
+        <p data-i18n="service_seo_intro">
+          Get ready for organic growth with comprehensive keyword research, on-page optimisation, and data-driven strategies designed to boost your search rankings.
+        </p>
+        <p data-i18n="service_seo_details">
+          Details: Coming Soon!
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
 
+
+          
           <!-- #PRICING -->
 <section class="pricing" data-i18n="pricing_section">
   <h2 data-i18n="pricing_heading">Pricing Options</h2>
