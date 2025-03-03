@@ -739,15 +739,15 @@ main {
 .service-item-title {
   margin-bottom: 7px;
 }
+.service-item-title:hover {
+  color: var(--primary-color);
+}
 
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
-}
-.service-item:hover .service-item-title, {
-  color: var(--primary-color); /* Change to primary color on hover */
 }
 
 
