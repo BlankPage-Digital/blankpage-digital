@@ -746,8 +746,7 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
-.service-item:hover .service-item-title,
-.service-item:hover .service-item-text {
+.service-item:hover .service-item-title, {
   color: var(--primary-color); /* Change to primary color on hover */
 }
 
