@@ -1827,11 +1827,6 @@ textarea.form-input::-webkit-resizer {
   }
 }
 @media (max-width: 600px) {
-  .sidebar .avatar-box {
-    --size: 85px; /* Sadee’s mobile size */
-  }
-}
-@media (max-width: 600px) {
   .sidebar-info {
     gap: 0.75rem; /* Sadee’s mobile gap */
   }
