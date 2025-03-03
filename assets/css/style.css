@@ -353,13 +353,16 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 12px;
   overflow: hidden;
-  width: 150px;
-  height: 150px;
+     --size: 150px; /* Default size */
+  width: var(--size);
+  height: var(--size);
 }
 .avatar-box img {
+  width: 100%;
   max-width: 100%;
-  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
+  border-radius: var(--radius-50);
 }
 .info-content .name {
   color: var(--white-2);
@@ -1822,17 +1825,21 @@ textarea.form-input::-webkit-resizer {
     text-align: left;
   }
   .avatar-box {
-    margin-right: 1rem; /* Space between pfp and text */
-    margin-bottom: 0;   /* Remove vertical margin */
-    max-width: 50px;    /* Match pfp width */
-  }
-  .avatar-box img {
-    width: 50px;
-    height: auto;
+    margin-bottom: 10px;
   }
   .info_more-btn {
     top: 10px;
     right: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .sidebar .avatar-box {
+    --size: 100px; /* Sadee’s mobile size */
+  }
+}
+@media (max-width: 600px) {
+  .sidebar-info {
+    gap: 0.75rem; /* Sadee’s mobile gap */
   }
 }
 
@@ -2245,18 +2252,6 @@ textarea.form-input::-webkit-resizer {
   .info-content .title {
     margin: auto;
   }
-@media screen and (max-width: 600px) {
-  .info-content {
-    flex-grow: 1; /* Allows text to fill remaining space */
-    text-align: left; /* Align text left of pfp */
-  }
-  .info-content .name {
-    margin: 0; /* Remove default margin */
-  }
-  .info-content .title {
-    margin-top: 0; /* Remove top margin */
-  }
-}
   .info_more-btn {
     display: none;
   }
