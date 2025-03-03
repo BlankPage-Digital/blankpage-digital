@@ -1827,10 +1827,6 @@ textarea.form-input::-webkit-resizer {
   .avatar-box {
     margin-bottom: 10px;
   }
-  .info_more-btn {
-    top: 10px;
-    right: 10px;
-  }
 }
 @media (max-width: 600px) {
   .sidebar .avatar-box {
