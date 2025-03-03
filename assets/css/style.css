@@ -336,11 +336,11 @@ main {
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
-  overflow: hidden;
+  overflow-y: auto;
   transition: var(--transition-2);
 }
 .sidebar.active {
-  max-height: none;
+  max-height: 250px;
 }
 .sidebar-info {
   position: relative;
@@ -426,6 +426,8 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+  max-height: 150px; /* Limit contact list height */
+  overflow-y: auto;  /* Enable scrolling within sidebar */
 }
 .contact-item {
   min-width: 100%;
@@ -1813,12 +1815,12 @@ textarea.form-input::-webkit-resizer {
     width: 100%;
     padding: 1.5rem;
     max-height: 250px;
-    overflow: hidden;
+    overflow-y: auto;
     border-right: none;
     border-bottom: 1px solid var(--jet);
   }
   .sidebar.active {
-    max-height: none;
+    max-height: 250px;
   }
   .sidebar-info {
     flex-direction: column;
@@ -1836,7 +1838,13 @@ textarea.form-input::-webkit-resizer {
     max-width: 100%; /* Ensures it fits */
     height: auto;
   }
-}  
+}
+   @media (max-width: 600px) {
+  .sidebar {
+    padding-left: 1rem; /* Emphasize left alignment */
+    padding-right: 0.5rem; /* Reduce right padding */
+  }
+}
   .info_more-btn {
     top: 10px;
     right: 10px;
