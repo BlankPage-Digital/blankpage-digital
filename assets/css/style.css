@@ -758,19 +758,23 @@ main {
     align-items: center;
     text-align: center;
   }
-  
-  /* Center the icon container and its image */
   .service-icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px; /* optional spacing between icon and text */
+    margin-bottom: 10px;
   }
-  
   .service-icon-box img {
     display: block;
     margin: 0 auto;
   }
+}
+
+.service-extra {
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: var(--light-gray);
+  margin-top: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -861,8 +865,7 @@ main {
   color: var(--white-2);
   margin-bottom: 15px;
 }
-.modal-content p,
-.modal-details {
+.modal-content, .modal-details {
   color: var(--white-2);
   font-size: 14px;
   line-height: 1.6;
@@ -1200,7 +1203,6 @@ main {
   font-size: 0.8em;
   color: var(--light-gray);
   margin-top: 5px;
-}
 }
 
 /* Pricing Modal Styles */
