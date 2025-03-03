@@ -746,6 +746,10 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
+.service-item:hover .service-item-title,
+.service-item:hover .service-item-text {
+  color: var(--primary-color); /* Change to primary color on hover */
+}
 
 
 @media (max-width: 768px) {
@@ -859,8 +863,9 @@ main {
   color: var(--white-2);
   margin-bottom: 15px;
 }
+.modal-content p,
 .modal-details {
-  color: var(--light-gray);
+  color: var(--white-2);
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 15px;
