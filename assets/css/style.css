@@ -77,6 +77,8 @@
   /* Transitions */
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
+
+  --radius-50: 50%;
 }
 
 @font-face {
@@ -351,9 +353,9 @@ main {
 }
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 12px;
+  border-radius: var(--radius-50); /* Sadee’s circular style */
   overflow: hidden;
-     --size: 150px; /* Default size */
+  --size: 150px;
   width: var(--size);
   height: var(--size);
 }
