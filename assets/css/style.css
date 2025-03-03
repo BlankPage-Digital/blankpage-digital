@@ -1834,7 +1834,7 @@ textarea.form-input::-webkit-resizer {
 }
 @media (max-width: 600px) {
   .sidebar .avatar-box {
-    --size: 90px; /* Sadee’s mobile size */
+    --size: 85px; /* Sadee’s mobile size */
   }
 }
 @media (max-width: 600px) {
