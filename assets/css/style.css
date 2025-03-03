@@ -357,8 +357,8 @@ main {
   height: 150px;
 }
 .avatar-box img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 .info-content .name {
@@ -1817,12 +1817,18 @@ textarea.form-input::-webkit-resizer {
     max-height: none;
   }
   .sidebar-info {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
   .avatar-box {
-    margin-bottom: 10px;
+    margin-right: 1rem; /* Space between pfp and text */
+    margin-bottom: 0;   /* Remove vertical margin */
+    max-width: 50px;    /* Match pfp width */
+  }
+  .avatar-box img {
+    width: 50px;
+    height: auto;
   }
   .info_more-btn {
     top: 10px;
@@ -2239,6 +2245,18 @@ textarea.form-input::-webkit-resizer {
   .info-content .title {
     margin: auto;
   }
+@media screen and (max-width: 600px) {
+  .info-content {
+    flex-grow: 1; /* Allows text to fill remaining space */
+    text-align: left; /* Align text left of pfp */
+  }
+  .info-content .name {
+    margin: 0; /* Remove default margin */
+  }
+  .info-content .title {
+    margin-top: 0; /* Remove top margin */
+  }
+}
   .info_more-btn {
     display: none;
   }
