@@ -760,6 +760,37 @@ main {
   color: var(--light-gray-70);
 }
 
+.contact-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  color: var(--white-1);
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  background: var(--text-gradient-lang);
+}
+
+.contact-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  background: var(--primary-color);
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.contact-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-btn:hover::after {
+  opacity: 0;
+}
+
 .pricing-note {
   text-align: center;
   font-size: 12px;
@@ -805,7 +836,6 @@ main {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  z-index: 29;
   transition: var(--transition-1);
 }
 
@@ -880,17 +910,17 @@ main {
 /*--------------------------------------------------------------
    Call for Action Section
 --------------------------------------------------------------*/
-.cta-videos {
-  padding: 2rem 0;
-}
-
 .cta-title {
   text-align: left;
   margin-bottom: 20px;
   color: var(--white-2);
 }
 
-.video-grid {
+.cta-videos {
+  padding: 2rem 0;
+}
+
+.cta-videos .video-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -903,6 +933,7 @@ main {
 .cta-videos video {
   width: 100%;
   height: 200px;
+  border: none;
   border-radius: 10px;
 }
 
@@ -927,12 +958,16 @@ main {
   padding-bottom: 35px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
   scroll-snap-type: x mandatory;
 }
 
 .testimonials-item {
-  min-width: 80%;
-  scroll-snap-align: start;
+  min-width: unset%; /* Likely a typo; should be a specific value like 80% */
+  max-width: 600px;
+  width: 80%;
+  margin: 0;
+  scroll-snap-align: auto;
 }
 
 .testimonials-avatar-box {
@@ -962,6 +997,22 @@ main {
   overflow: hidden;
 }
 
+.testimonials-item .content-card {
+  transition: transform 0.3s ease;
+}
+
+.testimonials-item-title {
+  transition: color 0.3s ease;
+}
+
+.testimonials-item:hover .content-card {
+  transform: scale(1.05);
+}
+
+.testimonials-item:hover .testimonials-item-title {
+  color: var(--primary-color);
+}
+
 /*--------------------------------------------------------------
    Testimonials Modal
 --------------------------------------------------------------*/
@@ -974,10 +1025,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  z-index: 20;
   pointer-events: none;
   visibility: hidden;
-  z-index: 20;
-  transition: var(--transition-1);
+}
+
+.modal-container::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-container.active {
@@ -995,6 +1051,7 @@ main {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 1;
   transition: var(--transition-1);
 }
 
@@ -1006,19 +1063,16 @@ main {
 
 .testimonials-modal {
   background: var(--eerie-black-2);
+  position: relative;
   padding: 15px;
-  margin: 15px;
+  margin: 15px 12px;
   border: 1px solid var(--jet);
   border-radius: 14px;
   box-shadow: var(--shadow-5);
   transform: scale(1.2);
   opacity: 0;
   transition: var(--transition-1);
-  z-index: 30;
-  max-width: 500px;
-  width: 90%;
-  max-height: 90vh;
-  overflow-y: auto;
+  z-index: 2;
 }
 
 .modal-container.active .testimonials-modal {
@@ -1040,7 +1094,6 @@ main {
   color: var(--white-2);
   font-size: 18px;
   opacity: 0.7;
-  transition: opacity var(--transition-1);
 }
 
 .modal-close-btn:hover,
@@ -1048,11 +1101,38 @@ main {
   opacity: 1;
 }
 
+.modal-close-btn ion-icon {
+  --ionicon-stroke-width: 50px;
+}
+
 .modal-avatar-box {
   background: var(--bg-gradient-onyx);
+  width: max-content;
   border-radius: 14px;
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
+}
+
+.modal-img-wrapper > img {
+  display: none;
+}
+
+.modal-title {
+  margin-bottom: 4px;
+}
+
+.modal-content time {
+  font-size: var(--fs-6);
+  color: var(--light-gray-70);
+  font-weight: var(--fw-300);
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
 }
 
 /*--------------------------------------------------------------
@@ -1072,54 +1152,39 @@ main {
   padding-bottom: 25px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  scroll-padding-inline: 25;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
 }
+
 .clients-item {
   min-width: 50%;
   scroll-snap-align: start;
 }
+
 .clients-item img {
   max-width: 80px;
   height: auto;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
+
 .clients-item img:hover {
   filter: grayscale(0);
 }
+
 /*--------------------------------------------------------------
    Resume Section
 --------------------------------------------------------------*/
-
-/* Download CV Button */
-.download-cv {
-  margin-bottom: 20px;
+.article-title {
+  margin-bottom: 30px;
 }
 
-.download-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: transparent;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.download-btn:hover {
-  background: var(--primary-color);
-  color: #fff;
-}
-
-/* Education & Experience */
 .timeline {
   margin-bottom: 30px;
 }
 
-.title-wrapper {
+.timeline .title-wrapper {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -1179,7 +1244,6 @@ main {
   line-height: 1.6;
 }
 
-/* Skills (Resume) */
 .skills-title {
   margin-bottom: 20px;
 }
