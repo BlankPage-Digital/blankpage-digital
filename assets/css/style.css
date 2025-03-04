@@ -963,7 +963,7 @@ main {
 }
 
 .testimonials-item {
-  min-width: unset%; /* Likely a typo; should be a specific value like 80% */
+  min-width: unset%;
   max-width: 600px;
   width: 80%;
   margin: 0;
